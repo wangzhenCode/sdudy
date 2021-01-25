@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 正则表达式：
+    * 1.字面量形式创建，var 正则表达式名称 = /正则表达式内容/修饰符；
+    * 2.构造放大创建 var 正则表达式名称 = new RegExp('正则表达式内容', '修饰符');
+    *
+    *
+    * test方法：test方法是正则表达式的一个方法，用内判断正则表达式内容是否满足正则要求，满足返回true，不满足返回false
+    *
+    * */
+
+
+    //var reg = /a/;
+    var reg = /a/i;
+    //var str = 'abc';
+    //var str = 'bc';
+    //var str = 'bcA';
+    var str = 'bAc';
+    console.log(reg.test(str));
+
+    var reg2 = new RegExp('a', 'i');
+    var str2 = 'bcA';
+    console.log(reg2.test(str2));
+  </script>
+</body>
+</html>
