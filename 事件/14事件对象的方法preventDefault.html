@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<a href="http://www.baidu.com">百度一下</a>
+
+<script>
+  /*
+  * preventDefualt方法：1.作用：取消默认，其实就是取消页面中元素自带的默认功能
+  *                    2.格式：事件对象.preventDefualt();
+  *                    3.注意：低版本的IE浏览器不支持，需要用事件对象的returnValue = false;
+  *
+  *
+  * contextmenu事件默认鼠标右键会弹出窗口，可以配合取消默认
+  * */
+
+
+   var link = document.getElementsByTagName("a")[0];
+  //谷歌
+  // link.onclick = function (ev) {
+  //   ev = ev || window.event;
+  //   //取消默认
+  //   ev.preventDefault();
+  // }
+  //
+
+  // //IE8及低版本
+  // link.onclick = function (ev) {
+  //   ev = ev || window.event;
+  //   //取消默认
+  //   ev.returnValue = false;
+  // }
+
+  //兼容写法
+  link.onclick = function (ev) {
+    ev = ev || window.event;
+    // if(ev.preventDefault == undefined){
+    //   ev.returnValue = false;
+    //   console.log('world')
+    // }else{
+    //   ev.preventDefault();
+    //   console.log('hello')
+    // }
+    ev.preventDefault == undefined ? ev.returnValue=false : ev.preventDefault();
+
+  }
+
+  //contextmenu事件
+  document.oncontextmenu = function (ev) {
+    ev = ev || window.event;
+    // if(ev.preventDefault == undefined){
+    //   ev.returnValue = false;
+    // }else{
+    //   ev.preventDefault();
+    // }
+    ev.preventDefault == undefined ? ev.returnValue=false : ev.preventDefault();
+  }
+
+</script>
+</body>
+</html>

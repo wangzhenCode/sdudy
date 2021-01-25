@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    li{
+      line-height: 50px;
+      background-color: red;
+      margin-top: 10px;
+    }
+  </style>
+
+
+</head>
+<body>
+<ul>
+  <li>我是第1个li</li>
+  <li>我是第2个li</li>
+  <li>我是第3个li</li>
+  <li>我是第4个li</li>
+  <li>我是第5个li</li>
+</ul>
+
+</body>
+<script>
+  /*
+  * currentTarget属性：作用是表示谁身上的事件正在被触发
+  * targe属性：作用是获取当前那个元素被点击了
+  *
+  * 注意：这两个属性IE8及更第版本不支持
+  *
+  * 所以iE及低版本用srcElement属性获取当前被点击的对象
+  * */
+
+  var ul = document.getElementsByTagName("ul")[0];
+
+  /*ul.onclick = function (ev) {
+    ev = ev || window.event;
+    console.log(ev.currentTarget);//利用冒泡原理由内向外找
+    console.log(ev.target);//点击谁返回谁
+  }
+
+  document.body.onclick = function (ev) {
+    ev = ev || window.event;
+    console.log(ev.currentTarget);
+    console.log(ev.target);
+  }*/
+
+  //低版本的IE
+  /*ul.onclick = function (ev) {
+    ev = ev || window.event;
+    console.log(ev.srcElement);//获取当前被点击的对象
+  };*/
+
+
+  //兼容写法
+  ul.onclick = function (ev) {
+    ev = ev || window.event;
+    var newTar = ev.srcElement || ev.currentTarget;
+    console.log(newTar.innerHTML);
+  }
+</script>
+
+</html>

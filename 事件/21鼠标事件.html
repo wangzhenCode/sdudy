@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: #c42929;
+    }
+    #box{
+      width: 100px;
+      height: 100px;
+      background-color: #56db16;
+    }
+  </style>
+
+</head>
+<body>
+  <div>
+    <div id="box"></div>
+  </div>
+
+  <script>
+    //鼠标点击事件（左键）
+    var div = document.querySelector("div");
+    // div.onclick = function (e) {
+    //   console.log(e.type);
+    // }
+
+    //鼠标双击事件（左键）
+    // div.ondblclick = function (e) {
+    //   console.log(e.type);
+    // }
+
+    //mouseover事件,鼠标移入时只触发一次，但是如果该元素里面有子元素，则移入子元素或移除子元素都会触发
+    // div.onmouseover = function (e) {
+    //   console.log(e.type);
+    // }
+
+    //mouseout事件，鼠标移出时只触发一次，但是如果该元素里面有子元素，则移出子元素或移除子元素都会触发
+    // div.onmouseout = function (e) {
+    //   console.log(e.type);
+    // }
+
+    //mouseenter事件：鼠标移入会触发一次，如果有子代元素，不会重复触发
+    div.onmouseenter = function (e) {
+      console.log(e.type);
+    }
+
+    //mouseleave事件：鼠标移出会触发一次，如果有子代元素，不会重复触发
+    div.onmouseleave = function (e) {
+      console.log(e.type);
+    }
+
+    //mousedown事件：鼠标按下时会触发(左键和右键都会触发)
+    div.onmousedown = function (e) {
+      console.log(e.type);
+    }
+
+    //mouseup事件：鼠标按键松开时触发(左键和右键都会触发)
+    div.onmouseup = function (e) {
+      console.log(e.type);
+    }
+
+    //mousemove事件：鼠标移动时会触发事件
+    div.onmousemove = function (e) {
+      console.log(e.type);
+    }
+  </script>
+</body>
+</html>

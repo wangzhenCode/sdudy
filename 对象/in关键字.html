@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+
+  /*
+  * in关键字是判断属性是否属于对象，如果属于对象，返回true，不属于对象返回false
+  * 格式：'属性名' in 对象名
+  * */
+  var obj = {
+    name: 'Tom',
+    age: 45,
+    salary:8000
+  };
+  var res = 'name' in obj;
+  var res2 = 'school' in obj;
+  console.log(res);//true
+  console.log(res2);//false
+
+</script>
+</body>
+</html>

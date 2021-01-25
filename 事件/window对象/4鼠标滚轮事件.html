@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * mousewheel事件：鼠标滚轮事件，滚动鼠标滚轮时触发该事件,在该事件中事件对象的button值为0,detail值也是0
+  *   但是事件对象的wheelDelta属性值在不同浏览器中不同，比如在谷歌中时150/-150，在ie下面是120/-120，
+  *   但是在火狐下面不支持该属性；
+  *
+  *  针对火狐浏览器使用DOMMouseScroll事件，并且该事件只能在DOMM2级事件处理程序中绑定，并且在该事件中使用对象的
+  *  detail属性可以获取滚动滚轮时返回一个数值，该值为3/-3
+  * */
+
+  document.onmousewheel = function (e) {
+    //console.log(e.button);
+    console.log(e.wheelDelta);
+    console.log(e.detail);
+  }
+
+  document.addEventListener("DOMMouseScroll", function (e) {
+    console.log(e.detail);
+  })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * 异常捕获机制，一般当程序运行时某一行代码可能会出现异常，就要加上try catch异常捕获机制
+  * 因为，如果不加try catch，程序运行到出现问题的代码时会停止继续往下执行，用户体验不好，
+  * 为了解决这个问题，可以将可能会出现异常的代码放到try中，然后再catch中给出解决的方法，或者
+  * 直接将异常打印到页面让用户知道怎么修改
+  *格式：try{
+  *   可能会出现异常的代码
+  *   }catch(error){
+  *   console.log(error);
+  *   或者:解决问题的代码
+  * }
+  * */
+  console.log(1)
+  console.log(2)
+  try {
+    // 可能会出现异常的代码
+    var arr = new Array(-10);
+    console.log(arr);
+  }catch (error){
+    //打印error
+    console.log(error);//打印异常
+    //解决异常的代码
+    /*var arr = new Array(10);
+    console.log(arr);*/
+  }
+  console.log(32)
+  console.log(4)
+
+</script>
+</body>
+</html>

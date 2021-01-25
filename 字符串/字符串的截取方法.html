@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    * slice方法
+    * 1.根据下表对字符串进行截取操作
+    * 2.格式：字符串.slice(begin, end);
+    * 3.参数
+    *   begin:截取字符串的起始位置；
+    *   end：截取字符串的终止位置；
+    * 4.注意：该方法截取时包含起始位置下标，不包含终止位置下标
+    *        只传一个参数，表示截取改参数后的所有字符
+    *        不传参数，表示截取整个字符串，也就是复制字符串
+    * */
+
+    var str = 'helloworld';
+    var res = str.slice(0,5);
+    console.log(res);
+    var res = str.slice(5);
+    console.log(res);
+    var res = str.slice();
+    console.log(res);
+
+
+    /*
+    * substring方法
+    * 1.作用：根据下标对字符串进行截取
+    * 2.格式：字符串.substring(begin, end);
+    * 3.参数：
+    *   begin:截取字符串的起始位置；
+    *   end：截取字符串的终止位置；
+    *   注意：该方法截取时包含起始位置下标，不包含终止位置下标
+    *        只传一个参数，表示截取改参数后的所有字符
+    *        不传参数，表示截取整个字符串，也就是复制字符串
+    *
+    * 其实用法和slice一样
+    *
+    * */
+
+    var res = str.substring(0,5);
+    console.log(res);
+    var res = str.substring(5);
+    console.log(res);
+    var res = str.substring();
+    console.log(res);
+
+    /*
+    *
+    * 看起来slice和substring这两个方法一样，其实他们有一点不同
+    * 不同点：slice方法可以传入负值，表示从后往前截，最后一位下标可以认为是-1,
+    * 其他用法和正数下标时一致
+    * */
+
+    var res = str.slice(-5,-1);
+    console.log(res);
+    var res = str.slice(-5);
+    console.log(res);
+
+    /*
+    * substr方法
+    * 1.作用：从起始位置往后截取指定长度的字符串
+    * 2.格式：字符串.substr(起始位置, 截取长度)；
+    *
+    * */
+
+    var srt = 'helloword';
+    var res = str.substr(4);
+    var res = str.substr(1,6);
+    console.log(res);
+  </script>
+
+</body>
+</html>

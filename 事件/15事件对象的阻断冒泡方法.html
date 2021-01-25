@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #red{
+      width: 300px;
+      height: 300px;
+      background-color: red;
+    }
+    #green{
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+    #blue{
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+    div{
+      margin: 50px auto;
+      padding-top: 0.1px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+<div id="red">
+  <div id="green">
+    <div id="blue"></div>
+  </div>
+</div>
+<script>
+  /*
+  * stopPropagation()方法：作用：阻止当前点击的元素的冒泡行为
+  * 但是IE低版本浏览器不支持，所以IE浏览器要使用cancelBubble = true来阻断冒泡
+  * */
+
+  var red = document.getElementById("red");
+  var green = document.getElementById("green");
+  var blue = document.getElementById("blue");
+  
+  red.onclick = function () {
+    console.log('red')
+  }
+  green.onclick = function () {
+    console.log('green')
+  }
+
+  blue.onclick = function (e) {
+    e = e || window.event;
+    //谷歌阻断冒泡
+    //e.stopPropagation();
+
+    //IE低版本浏览器
+    // e.cancelBubble = true;
+    // console.log('blue');
+
+    //兼容写法
+    e.stopPropagation == undefined ? e.cancelBubble = true : e.stopPropagation();
+
+  }
+</script>
+</body>
+</html>

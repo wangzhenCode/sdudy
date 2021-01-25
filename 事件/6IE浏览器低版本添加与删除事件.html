@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: #c42929;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+
+  </div>
+  <button>删除事件</button>
+<script>
+  /*
+  * IE浏览器添加和删除事件的方式：
+  *   1.attachEvent("on事件名称",事件处理函数)；
+  *
+  *   2.detachEvent("onclick", fn)
+  * */
+
+  var div = document.getElementById("box");
+  /*div.attachEvent("onclick", function () {
+    console.log('hello');
+  });*///如果要删除这个事件，那么就不能写匿名函数，要写有名函数
+
+
+  div.attachEvent("onclick", fn);
+
+  var button = document.getElementsByTagName("button")[0];
+
+  //给button添加事件
+  button.onclick = function (){
+    //删除上面的div上的事件
+    div.detachEvent("onclick", fn);
+  }
+
+  //fn函数
+  function fn() {
+    console.log('hello');
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * documentFragment可以提高页面加载性能，就是可以减少页面的回流和重绘操作
+  * */
+  //在页面中创建100个li
+  // var ul = document.createElement("ul");
+  // document.body.appendChild(ul);
+  //
+  // for(var i=1; i<=100; i++){
+  //   var li = document.createElement("li");
+  //   li.innerHTML = `这是第${i}个li`;
+  //   ul.appendChild(li);
+  // }
+
+  //使用documentFragment,降低浏览器渲染性能
+  var ul = document.createElement("ul");
+  var flag = document.createDocumentFragment();//创建仓库
+
+  for(var i=1; i<=100; i++){
+    var li = document.createElement("li");
+    var liText = document.createTextNode(i);
+    li.appendChild(liText);
+   flag.appendChild(li);
+  }
+  ul.appendChild(flag);
+  document.body.appendChild(ul);
+</script>
+</body>
+</html>

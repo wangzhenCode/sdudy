@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    table,td,th{
+      border: 1px solid;
+    }
+
+    table{
+      width: 600px;
+      border-collapse: collapse;
+      margin: 100px auto;
+    }
+    td,th{
+      height: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <th>产品名称</th>
+    <th>产品单价</th>
+    <th>产品数量</th>
+    <th>总价</th>
+  </tr>
+  <tr>
+    <td>iPhone5</td>
+    <td>500</td>
+    <td>
+      <button onclick="decrement(this)">-</button>
+        <span>1</span>
+      <button onclick="increment(this)">+</button>
+    </td>
+    <td class="singlePrice">500</td>
+  </tr>
+  <tr>
+    <td>iPhone6</td>
+    <td>600</td>
+    <td>
+      <button onclick="decrement(this)">-</button>
+      <span>1</span>
+      <button onclick="increment(this)">+</button>
+    </td>
+    <td class="singlePrice">600</td>
+  </tr>
+  <tr>
+    <td>iPhone7</td>
+    <td>700</td>
+    <td>
+      <button onclick="decrement(this)">-</button>
+      <span>1</span>
+      <button onclick="increment(this)">+</button>
+    </td>
+    <td class="singlePrice">700</td>
+  </tr>
+  <tr>
+    <td colspan="3">total</td>
+    <td id="totalPrice">1800</td>
+  </tr>
+</table>
+
+
+<script>
+  function decrement(obj) {
+    //获取num
+    var num = obj.nextElementSibling.innerHTML;
+    //修改num
+    if(num > 1){
+      num --;
+    }
+    //重新赋值
+    obj.nextElementSibling.innerHTML = num;
+    //获取单价
+    var price = obj.parentElement.previousElementSibling.innerHTML;
+    //计算总价
+    var totalPrice = price * num;
+    //重新赋值总价
+    obj.parentElement.nextElementSibling.innerHTML = totalPrice;
+    comTotalPrice();
+
+  }
+  function increment(obj) {
+    //获取num
+    var num = obj.previousElementSibling.innerHTML;
+    //修改num
+    num++;
+    //重新赋值
+    obj.previousElementSibling.innerHTML = num;
+    //获取单价
+    var price = obj.parentElement.previousElementSibling.innerHTML;
+    //计算总价
+    var totalPrice = num * price;
+    //改变后再重新赋值
+    obj.parentElement.nextElementSibling.innerHTML = totalPrice;
+    comTotalPrice()
+
+  }
+
+  function comTotalPrice() {
+    var sum = 0;
+    //获取总价
+    var numPrice = document.getElementById("totalPrice");
+
+    //获取每一行的总价
+    var total = document.getElementsByClassName("singlePrice");
+    for(var i=0;i<total.length;i++){
+      sum = sum + parseInt(total[i].innerHTML);
+    }
+    numPrice.innerText = sum;
+
+  }
+
+</script>
+</body>
+</html>

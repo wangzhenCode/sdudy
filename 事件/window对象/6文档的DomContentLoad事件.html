@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1089874897,1268118658&fm=26&gp=0.jpg" alt="">
+<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2853553659,1775735885&fm=26&gp=0.jpg" alt="">
+
+<script>
+  /*
+  * DOMContentLoaded事件：DOMContentLoaded事件加载迟于load事件，因为该事件是文档中整个DOM树加载完成之后触发DOMContentLoaded事件，
+  * 而load是指文档中的所有资源加载完整之后触发事件。要注意的是：DOMContentLoaded事件只能用DOM2级事件处理程序加载
+  * */
+  // window.onDOMContentLoaded = function () {//DOM1级事件无效
+  //   console.log("DOMContentLoaded被加载了");
+  // }
+
+  //DOM2级事件绑定DOMContentLoaded
+  window.addEventListener("DOMContentLoaded", function () {
+    console.log('DOMContentLoaded事件被触发了');
+  })
+  
+  window.onload = function () {
+    console.log('onLoad事件被加载了');
+  }
+</script>
+</body>
+</html>

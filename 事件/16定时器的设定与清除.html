@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <button>清楚定时器</button>
+<script>
+  /*
+  * setInterval()方法：
+  * 1.作用：给当前操作设计定时器，简单的说就是能够在一定时间间隔下重复执行某个操作
+  * 2.格式：window.setInterval(要被执行的操作，时间间隔);该方法是window对象的方法，所以window.可以省略
+  * 3.参数说明：
+  *   a.要被执行的操作：可以是匿名函数，也可以是有名函数的名称
+  *   b.时间间隔：时间的毫秒数，1s = 1000ms;
+  * 4.该方法有返回值，返回值为一个数值，这个数值是该定时器的编号，可以用来删除定时器
+  *
+  *
+  * cleanInterval()方法
+  * 1.作用：用来删除定时器
+  * 2.格式：window.cleanInterval(定时器编号)；
+  * */
+
+  //开启定时器
+  var timer = setInterval(function () {
+    console.log(parseInt(Math.random()*255 + 1));
+  },1000);
+
+  //关闭定时器
+    var button = document.getElementsByTagName("button")[0];
+    button.onclick = function () {
+      clearInterval(timer);
+    }
+
+</script>
+</body>
+</html>

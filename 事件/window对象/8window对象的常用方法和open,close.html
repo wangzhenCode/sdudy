@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<button>
+  打开一个空白窗口
+</button>
+<button>
+  打开一个窗口
+</button>
+<button>
+  关闭当前窗口
+</button>
+<body>
+<script>
+  /*
+  * window对象以前学过的方法回顾：
+  * alert()方法：弹出一个窗口，该方法不解析不支持html标签，支持转义字符
+  * confirm()方法：确认窗口
+  * prompt()方法：输入窗口（有两个参数）
+  * isNaN()方法：判断参数是否为NaN
+  * isFnish（）方法：判断参数是否为有限值
+  * */
+
+  /*
+  * open()方法：打开一个窗口，这个窗口可以自定义，也可以默认
+  * 格式：window.open("窗口地址", "窗口名称", "窗口属性");
+  * 返回值：返回值为打开的新窗口的window对象
+  * 注意：open方法的参数可以省略，也可以选写，如果全部省略则打开一个空白窗口
+  * 参数说明：a.窗口地址可以是自己写的网页，也可以是连接地址
+  *          b.窗口名称如果写了，则点击后，永远只会打开一个窗口,每次点击都是在刷新打开的新窗口
+  *          c.窗口属性可以定义打开的新窗口的大小，位置等，格式为:"width=xxx height=xxx top=xxx left=xxx"
+  * */
+
+
+  /*
+  * close()方法：关闭窗口
+  * 格式：window.close();
+  *
+  * */
+  //打开一个新的空白窗口
+  var buttons = document.querySelectorAll("button");
+  buttons[0].onclick = function(){
+   // window.open();
+    var res = window.open();
+    //根据返回值可以随意设置新窗口的属性值
+    res.document.body.innerHTML = "<h2>我是新页面</h2>"
+    res.document.body.style.backgroundColor = "green";
+  }
+
+  buttons[1].onclick = function () {
+    //window.open("http://www.baidu.com");//打开指定地址
+    // window.open("7事件委托（重点）.html");//打开指定页面
+    //window.open("http://www.baidu.com","MyBaidu");//打开指定地址，每次点击都是再刷新新窗口
+    //第三个参数可以指定打开的新窗口的位置
+    window.open("http://www.baidu.com","MyBaidu","width=500px height=500px top=400px left=300px");
+  };
+
+  buttons[2].onclick = function () {
+    window.close();
+  }
+
+
+</script>
+</body>
+</html>

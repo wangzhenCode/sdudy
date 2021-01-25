@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<style>
+  #box{
+    width: 200px;
+    height: 200px;
+    background-color: #c42929;
+  }
+</style>
+  <div id="box"></div>
+  <button style="margin-top: 20px;width: 100px;height: 50px;">按钮</button>
+  <script>
+    /*
+    * 匿名函数：没有函数名，调用时不通过函数名就能调用的函数，通常与事件一起绑定使用，格式如：
+    * HTML元素.on事件 = function () {
+    *    函数体;
+    * };
+    *
+    * */
+
+    //例如，给一个div添加时间，点击之后打印5次hello；
+    //1.获取div节点
+    var myDiv = document.querySelector('div');
+    //2.给节点添加函数
+    myDiv.onclick = function (){
+      for(var i=1;i<=5;i++){
+        console.log("hello");
+      }
+    }
+
+    //添加一个button按钮，点击后打印5位验证码，验证码由字母，数字组成
+    var myButton = document.querySelector('button');
+    myButton.onclick = function () {
+      var str = "qwertyuiopasdfghjklmnbvcxz0123456789";
+      var s = "";
+      for (var i = 1; i <= 5; i++) {
+        var index = parseInt(Math.random() * str.length);
+        var char = str.charAt(index);
+        s = s + char;
+      }
+      console.log(s);
+    }
+  </script>
+</body>
+</html>

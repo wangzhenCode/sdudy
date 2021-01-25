@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * keyCode属性：作用是当出发键盘事件时，能过获得按下的键的键码值
+  *
+  * */
+
+  document.onkeydown = function (ev) {
+    ev = ev || window.event;
+    console.log(ev.keyCode);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  *
+  * 数组按照类型分为一维数组，二维数组，三位组
+  *
+  *
+  * */
+  var arr = [
+      [1,2,3,4],
+      [5,6,7,8,9],
+      [10,11]
+  ];
+  //需要注意的是for of遍历数组，拿不到数组的下标，只有数组对应的值
+  for (var val of arr){
+    console.log(val)
+  }
+  console.log(arr[1][2]);
+
+  arr[2][1] = 100;
+  delete arr[1][1];
+  console.log(arr);
+  console.log("==============================================");
+  //这里我用for in遍历
+  for(var i in arr){
+    console.log(arr)
+    for(var j in arr[i]){
+      console.log(arr[i][j]);
+    }
+  }
+
+
+</script>
+</body>
+</html>

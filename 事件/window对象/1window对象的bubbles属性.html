@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div{
+      width: 300px;
+      height: 300px;
+      background-color: red;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+
+  <script>
+
+    /*
+    * 事件对象的bubbles属性是判断事件是否为冒泡事件，如果是则返回true，否则返回false
+    * */
+    var div = document.querySelector("div");
+    document.addEventListener("click", function (e) {
+      console.log('document');
+      console.log(e.bubbles);
+    }, true);
+
+    document.documentElement.addEventListener("click", function (e) {
+      console.log('html');
+      console.log(e.bubbles);
+    }, true);
+
+    document.body.addEventListener("click", function (e) {
+      console.log('body');
+      console.log(e.bubbles);
+    }, true);
+
+    //再看看mouseover事件和mouseenter事件
+    div.onmouseover = function (e) { //冒泡事件
+      console.log(e.bubbles);//true
+      console.log('mouseover事件被触发了');
+    };
+
+    div.onmouseenter = function (e) { //非冒泡事件
+      console.log(e.bubbles);//false
+      console.log('mousebubbles事件被触发了');
+    };
+  </script>
+</body>
+</html>

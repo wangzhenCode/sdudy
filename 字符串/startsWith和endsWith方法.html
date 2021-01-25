@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * startsWith方法
+  * 1.作用：查找一个字符串的是否以目标字符开头，如果是返回true，否则返回false
+  * 2.格式：字符串.startsWith("目标字符");
+  *
+  * endsWith方法
+  * 1.作用：查找一个字符串是否以目标字符结尾，如果是返回true，否则返回false
+  * 格式：字符串.endsWith("目标字符");
+  *
+  * */
+
+  var str = "abcdef";
+  var res = str.startsWith("a");
+  var res = str.startsWith("a", 5);//还可以规定开始查找位置
+  console.log(res);
+
+  var res = str.endsWith("ef");//是否以ef结尾
+  var res = str.endsWith("c", 3);//从第二个位置查找c
+
+  console.log(res);
+
+</script>
+</body>
+</html>

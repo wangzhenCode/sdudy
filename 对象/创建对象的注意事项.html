@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*创建对象时注意事项
+    * 1.属性名也被称为键，属性值也被称为值，放在一起也成为键值对；
+    * 2.键与值之间用冒号隔开，键值对之间用逗号隔开，最后一个键值对不用逗号；
+    * 3，键值对中的键的命名可以不遵循标识符的命名规则，因为他的键是个字符串（如果有特殊字符，就用引号抱起来），但是还是建议遵循标识符的命名规则；
+    * 4.值得类型可以是任何类型，可以是基本类型的数据，可以是引用类型的数据。
+    * */
+    var p1 = {
+      name: 'xiaohu',
+      age: 10,
+      study: function (){
+        console.log("sss");
+      },
+      //用引号
+      'lasld,(dlasmd[]p{P': 'kog',
+      //可以是对象
+      a: {},
+      //可以是数组
+      b: []
+    };
+    console.log(p1);
+  </script>
+</body>
+</html>

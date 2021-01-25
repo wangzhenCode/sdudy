@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  用户名：
+  <input type="text" name="userName">
+
+  <script>
+    var input = document.querySelector('input');
+
+    //input事件：当输入框内容改变时触发事件
+    input.oninput = function (e) {
+      console.log(e.type);
+    }
+
+    //change事件：当输入框内容发生改变，并且失去焦点时触发事件
+    input.onchange = function (e) {
+      console.log(e.type);
+    }
+  </script>
+</body>
+</html>

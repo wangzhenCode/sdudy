@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  //keydown事件：当键盘被按下任意键时会触发
+  document.onkeydown = function (e) {
+    console.log(e.type);
+  }
+
+  //keypress事件：当键盘被按下任意键时会触发(但是不包括功能键)；
+  document.onkeypress = function (e) {
+    console.log(e.type);
+  }
+
+  //keyup事件：当键盘上任意键被松开时触发事件
+  document.onkeyup = function (e) {
+    console.log(e.type);
+  }
+</script>
+</body>
+</html>

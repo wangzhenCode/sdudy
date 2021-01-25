@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //判断奇偶性
+        /*
+            var num = parseInt(prompt("请输入一个数："));
+            if(num % 2 == 0){
+                    console.log(`${num}是偶数`);
+            }e  lse{
+                    console.log(`${num}是奇数`);
+               }
+        */
+        //判断三个数字的大小
+
+        /*
+            var num1 =28, num2=30, num3 = 19;
+            if(num1 > num2){
+                if(num1 > num3){
+                        console.log(`${num1}最大`);
+                }els    e if(num2 < num3){
+                        console.log(`${num3}最大`);
+                   }
+            }else if(num2 > num3){
+                    console.log(`${num2}最大`);
+            }e  lse{
+                    console.log(`${num3}最大`)
+               }
+        */
+        //优化
+        /*
+            var a = 100, b = 88, c = 45;
+            var max;
+            if( a > b){
+                max = a;
+            }else{
+                max = b;
+            }
+
+            if(max < c){
+                max = c;
+            } 
+                console.log(max);
+          */
+
+    //判断价格打折
+    /*var price = parseInt(prompt("请输入您的价格", 0));
+        
+            if(price >=1000){
+                price = price * 0.5;
+               
+            }else if(price >=800 && price < 1000){ 
+                price = price * 0.6;
+                
+            }else if(price >=500 && price < 800){
+                price = price * 0.7;
+            }else if(price >=200 && price < 500){        
+                price = price * 0.8;
+            } else {
+                price = price * 0.9;
+            }      
+
+            console.log(`您折扣后的价格为${price}`);
+      */
+
+    //分段函数
+        /*
+            var x = parseInt(prompt("请输入x的值："));
+            var y;
+            if(x < 0){
+                y = 2*x + 1;
+            }else if(x >= 0 && x < 5){
+                y = x*x + 5;
+            }else {
+                y = 3*x - 6;
+            }
+                console.log(`y的值为:${y}`); 
+          */
+
+     //商场购物
+     /*
+            var customer, price, discount;
+            customer = prompt("请输入是否为会员，（是:y  否:n）");  
+            price = parseInt(prompt("请输入价格："));  
+
+            //判断会员
+
+            if(customer == "y"){
+                //是会员
+                if(price >= 200){
+                    discount = price * 0.75;
+                }else{
+                    discount = price * 0.8;
+                }
+            }else{
+                //非会员
+                if(price >= 100){
+                    discount = price * 0.9;
+                }else{
+                    discount = price;
+                }
+            }
+                console.log(`你的总价是${price},打折后是${discount}`);
+          */
+        //判断每个月有多少天
+            // var moth = parseInt(prompt("输入的月份是："));
+            // var days;
+
+            // switch(moth){
+        //      case 1:
+        //      case 3:
+        //      case 5:
+        //      case 7:
+        //      case 8:
+        //      case 10:
+        //      case 12:
+            //         days = 31;
+            //         break;
+        //      case 4:
+        //      case 6:
+        //      case 9:
+        //      case 11:
+            //         days = 30;
+            //         break;
+        //      case 2:
+            //     var year = parseInt(prompt("请输入年份："));
+            //     if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+            //         days = 29;
+            //     }else{
+            //         days = 28;
+            //     }
+            // }
+            //  console.log(`${moth}月是${days}天`);
+        //      console.log(isNaN("string"  ));
+/*
+        var score = parseInt(prompt("请输入成绩："));
+
+        switch(true){
+            case score >= 90 && score <100:
+                console.log("优秀");
+                break;
+            case score >= 70 && score <90:
+                console.log("良好");
+                break;
+            case score >= 60 && score <70:
+                console.log("合格");
+                break;
+            case score < 60:
+                console.log("不合格");
+                break;
+            default:
+                console.log("分数不合理 ");
+
+        }
+*/
+        //求所有的水仙花数
+/*
+        for(var i=100; i<=999; i++){
+
+            var g = i % 10;
+            var s = parseInt(i / 10)% 10;
+            var b = parseInt(i / 100) % 10;    
+            
+            var sum = g*g*g + s*s*s + b*b*b;
+            if(sum == i){
+                console.log(i);
+            }
+        }     
+*/ 
+        //求所有的回文数
+    /*    
+        var count = 0; 
+            for(var i=10000; i<+99999; i++){
+            //取每一位
+            var g = i % 10;
+            var s = parseInt(i / 10) % 10;
+            var q = parseInt(i /1000) % 10;
+            var w = parseInt(i / 10000) % 10;
+            //判断是否为回文数
+            if(g == w && s == q){
+                count ++;
+                console.log(i);
+            }
+
+        }
+        console.log(`总共有${count}个回文数`);
+
+    */
+
+    //利用while统计水仙花数
+    /*
+    var num = 100;
+    var sum;
+    while(num <= 999){
+        var g = num % 10;
+        var s = parseInt(num / 10) % 10;
+        var b = parseInt(num /100) % 10;
+
+        sum = g*g*g + b*b*b + s*s*s;
+        if(sum == num){
+            console.log(`${num}就是水仙花数`);
+        }
+
+        num ++;
+
+    }
+    */
+
+    //计算2+22+222+2222+22222的和；
+
+    var num = 2, sum = 0;
+    for(var i=1; i<=5; i++){
+
+        sum = sum + num;
+        num = num * 10 + 2;
+    }
+
+    console.log(sum);
+
+
+
+    </script>
+
+
+</body>
+</html>

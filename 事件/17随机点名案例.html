@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <button>开始</button>
+  <button>结束</button>
+  <span></span>
+
+  <script>
+
+    names = ['Tom', 'Lucy', 'Lily', 'Peter', '小李'];
+    var span = document.querySelector("span");
+    var button = document.querySelectorAll("button");
+    var timer;
+    //开启定时器
+    button[0].onclick = function() {
+      clearInterval(timer);
+      console.log(timer);
+      timer = setInterval(getName, 100);
+    }
+
+    //停止定时器
+    button[1].onclick = function () {
+      clearInterval(timer);
+    }
+
+    //定义函数，将名字写到页面
+    function getName() {
+      var index = parseInt(Math.random()*names.length);
+      span.innerHTML = names[index];
+    }
+
+  </script>
+</body>
+</html>

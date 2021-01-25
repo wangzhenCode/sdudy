@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * Math对象的Random方法：
+    * 1.作用：random方法是生成0-1之间的任意一个小数，包括0但不包括1
+    * 2.格式：Math.random();
+    * */
+    var y = Math.random();
+    console.log(y);
+
+    //生成n-m之间的任意一个数（包括n,m）,例如生成10-15之间的任意一个数
+    //通用公式为：Math.random()*((最大值+1-最小值)+最小值);
+    var y = parseInt(Math.random()*(15+1-10)+10);
+    console.log(y);
+
+  </script>
+</body>
+</html>

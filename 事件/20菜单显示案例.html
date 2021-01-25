@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    #menu{
+      width: 90px;
+      height: 90px;
+      background-color: #ccc;
+      list-style: none;
+      position:relative;
+      left: 0px;
+      top: 0px;
+      display: none;
+    }
+
+    li{
+      margin-left: 20px;
+      line-height: 30px;
+      height: 30px;
+      background-color: #eee;
+    }
+    li:hover{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<ul id="menu">
+  <li>复制</li>
+  <li>粘贴</li>
+  <li>剪贴</li>
+</ul>
+
+
+<script>
+  var ul = document.getElementById("menu");
+  var lis = document.getElementsByTagName("li");
+  document.oncontextmenu = function (ev) {
+    ev = ev || window.event;
+    //取消默认
+    ev.preventDefault == undefined ? ev.returnValue = false : ev.preventDefault();
+    //点击鼠标右键时将ul设置为显示
+    ul.style.display = 'block';
+
+    //获取鼠标点击的点到视口的距离
+    var x = ev.clientX;
+    var y = ev.clientY;
+
+    //将获得的视口距离复制给ul的样式
+    ul.style.left = x + "px";
+    ul.style.top = y + "px";
+  }
+
+  //点击鼠标左键，ul自动隐藏
+  document.onclick = function () {
+    ul.style.display = "none";
+  }
+
+  //鼠标移动到字上后变色
+
+    for(var i=0;i<lis.length; i++){
+      lis[i].onmouseover = function () {
+        this.style.backgroundColor = "#ccc";
+      }
+      lis[i].onmouseout = function () {
+        this.style.backgroundColor = "#eee";
+      }
+    }
+
+</script>
+</body>
+</html>

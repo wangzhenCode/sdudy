@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * 函数的定义：封装到一起的能够执行特殊功能的代码块，可以反复调用
+  * 函数的分类：
+  * 1.根据定义分：内置函数，用户自定义函数
+  * 2.根据参数分：有参函数，无参函数
+  * 3.根据返回值分：有返回值，无返回值
+  * 4.格式：function 函数名 () { }
+  * 5.调用：函数名();
+  * 6.使用函数的好处：
+  *   1):可以控制代码的执行时间
+  *   2):可以提高代码的复用性
+  *   3):提高代码的维护性
+  * */
+  //定于一个函数，打印100以内的所有偶数
+  function printNum(){
+    for(var i=1;i<=100;i++){
+      if(i%2==0){
+        console.log(i);
+      }
+    }
+  }
+  printNum();//调用函数
+  //定义一个函数，打印一个直角三角形，如：
+  // *
+  // **
+  // ***
+  // ****
+  // *****
+  function printTringle(){
+    for(var i = 1;i<=5; i++){
+      for(var j=1;j<=i; j++){
+        document.write("*");
+      }
+      document.write("</br>")
+    }
+  }
+  printTringle();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    //数组对象的concat方法,只能对数组起作用
+    //将两个数组拼接起来，也可以是数据
+    //格式：数组1.concat(数组2，数据)；
+    //原数组不会发生变化
+    var arr1 = [1,2,3,4];
+    var arr2 = [6,7,8,9];
+
+    var res1 = arr1.concat(arr2);
+    var res2 = arr1.concat(arr2,100);
+    console.log(res1);
+    console.log(res2);
+  </script>
+</body>
+</html>

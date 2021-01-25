@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #ball{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="ball"></div>
+
+  <script>
+
+
+    /*
+    * 移动的小球，按上下左右键可以移动
+    *
+    * */
+    //获取球对象元素
+    var ball = document.getElementById("ball");
+
+    //给对象元素添加
+    document.onkeydown = function (ev) {
+      ev = ev || window.event;
+      var sty = getStyle(ball);
+      //判断按的是哪个键
+      switch (ev.keyCode) {
+        case 37:
+          ball.style.left = parseInt(sty.left) - 10 + "px";
+          break;
+        case 38:
+          ball.style.top = parseInt(sty.top) - 10 + "px";
+          break;
+        case 39:
+          ball.style.left = parseInt(sty.left) + 10 + "px";
+          break;
+        case 40:
+          ball.style.top = parseInt(sty.top) + 10 + "px";
+          break;
+      }
+    }
+
+    //获取外部样式对象
+    function getStyle(ele) {
+      if(window.getComputedStyle == undefined){//ie
+          return ele.currentStyle;
+      }else{
+        return window.getComputedStyle(ele,null);//goolge
+      }
+    }
+
+  </script>
+</body>
+</html>

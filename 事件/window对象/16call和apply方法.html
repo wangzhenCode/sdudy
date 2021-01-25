@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * call()和apply()方法的作用是一样的，都是用来扩展函数对象的作用域范围
+    * 1.call方法的使用格式：函数.call(调用者，参数1，参数2，参数3，...);
+    * 2.apply方法的使用格式：函数.apply(调用者，[参数1，参数2，参数3，...])
+    * 3.说明：call和apply都是函数对象的方法，其实每个函数对象都包含了call和apply方法，
+    * 需要注意的是，当借用者函数使用call或apply方法借用资源时，不用再次调用被借资源，因为在
+    * 执行call或apply方法时已经调用了借用资源
+    * */
+
+    var obj1 = {
+      name: 'Tom',
+      age: 38,
+      speak: function () {
+        console.log('helloworld');
+      },
+      add: function (num1, num2) {
+        console.log(num1 + num2);
+      }
+    }
+
+    console.log(obj1.name);
+    console.log(obj1.age);
+    obj1.speak();
+    obj1.add(10,20);
+
+    var obj2 = {
+      name: 'Jack',
+      age: 40
+    }
+
+    console.log(obj2.name);
+    //利用call借取obj1的speak函数
+    obj1.speak.call(obj2);
+    obj1.add.call(obj2, 100, 200);
+
+    //apply和call的作用一致
+    obj1.speak.apply(obj2);
+    obj1.add.apply(obj2, [1000, 2000]);
+  </script>
+</body>
+</html>

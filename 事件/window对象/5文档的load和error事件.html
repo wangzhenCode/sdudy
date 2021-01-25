@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!--<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1819216937,2118754409&fm=26&gp=0.jpg" alt="">-->
+<!--<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg" alt="">-->
+
+<img src="XX.jpg" alt="">
+<img src="" alt="">
+<script>
+  /*
+  * load事件：load事件表示当页面中的所有内容全部加载完毕之后触发该事件，（例如页面中的所有图片全部加载完成）；
+  * error事件：error事件表示当前页面中某个元素的内容加载失败时触发该事件
+  * */
+  // window.onload = function () {
+  //   console.log("hello");
+  //
+  //   //将js代码放到load事件里面，则当前元素既可以放在script标签前面，也可以放在script标签后面
+  //   var div = document.querySelector("div");
+  //   console.log(div.innerHTML);
+  // }
+
+  var img = document.querySelector("img");
+  img.onerror = function () {
+    console.log('img');
+  }
+
+
+</script>
+
+<!--<div>你好</div>-->
+</body>
+</html>

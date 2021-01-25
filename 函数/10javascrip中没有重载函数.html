@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 重载函数：重载函数是指函数名称相同，形参个数不同，或者形参类型不同，这样的函数互称为重载函数
+    * function fn(a,b){
+    *   console.log(a,b);
+    * }
+    * function fn(a,b,c){
+    *   console.log(a,b,c);
+    * }
+    *
+    * 但是需要注意的是：javascrip中没有重载函数
+    * 注意：如果想模拟重载函数的功能，可以使用arguments模拟
+    * */
+    function fn(a){
+      console.log("只有一个参数"+a);
+    }
+    function fn(a,b){
+      console.log("有两个参数"+a,b);
+    }
+    fn(12);//这里明明调的是只有一个参数的函数，但是后台输出的却是：有两个参数a,undefined，说明后面的函数覆盖了前面的函数
+
+    //模拟重载函数
+    function fnn(){
+      if(arguments.length == 1){
+        console.log("只有一个参数");
+      }else{
+        console.log("有两个参数");
+      }
+    }
+    fnn(12);
+    fnn(12,1);
+  </script>
+</body>
+</html>

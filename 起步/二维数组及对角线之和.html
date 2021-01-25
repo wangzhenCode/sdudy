@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //将下列数组遍历出来,然后计算对角线上的元素之和
+    var sum = 0;
+    var arr = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+    ];
+   for(var i=0;i<arr.length;i++){
+     for(var j=0;j<arr[i].length;j++){
+       document.write(arr[i][j]+"&nbsp;&nbsp;&nbsp;&nbsp;");
+       if(i == j || i + j == 2){
+         sum = sum + arr[i][j];
+       }
+     }
+     document.write("<br>")
+   }
+    document.write("sum="+sum);
+  </script>
+</body>
+</html>

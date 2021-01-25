@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: #56db16;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onclick="printContent()"></div>
+    <button>删除事件</button>
+
+    <h1 onclick="fn(this)">我是1号标签</h1>
+    <h2 onclick="fn(this)">我是2号标签</h2>
+<script>
+    /*
+    * 1.什么是事件：事件是指浏览器用户或者浏览器自身的某些行为，如点击鼠标，敲击键盘，刷新页面等
+    * 2.jvascript中如何添加事件？
+    *   a.HTML事件处理程序
+    *       添加事件：<开始标签 on事件名称=“处理事件的函数名()”></结束标签>
+    *       删除事件：节点元素.removeAttribute("on事件名称")；
+    *       this的用法：如果在事件处理函数中将this作为参数传进函数，则这个this就指当前应用事件的那个元素
+    *   b.DOM0级事件处理程序
+    *   c.DOM2级事件处理程序
+    * */
+
+    //点击div触发事件
+    function printContent(){
+        console.log("heloWorld");
+    }
+
+    //删除上面的事件
+    var div = document.querySelector("#box");
+    var button = document.querySelector("button");
+    //为button添加事件
+    button.onclick = function (){
+        div.removeAttribute("onclick");
+        console.log('删除成功');
+    }
+
+    //点击标签打印内容
+    function fn(obj){
+        console.log(obj.innerHTML);
+    }
+
+
+</script>
+
+</body>
+</html>

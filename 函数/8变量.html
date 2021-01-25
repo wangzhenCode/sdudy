@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 变量：全局变量，局部变量
+    * 1.全局变量：全局变量指在函数外面定义的变量，可以在整个文档中使用
+    * 2.局部变量：局部变量指在函数里面定义的变量，只能在函数的内部使用
+    * 3.局部变量与全局变量的区别：
+    *   1）局部变量只能在定义的函数里面使用，全局变量可以在整个文档中使用
+    *   2）函数中的参数也属于局部变量
+    *   3）如果全局变量和局部变量同名，则全局变量会被局部变量覆盖
+    *   4）如果全局变量和局部变量同名，但是仍然要使用全局变量，就要给变量名前加window.或者this.
+    * */
+    //注意：全局变量容易造成数据污染，所以不推荐使用
+    var num = 100;//全局变量
+    function fn(){
+      console.log(num);
+    }
+    fn();
+    function fn1(){
+      var num1 = 200;//局部变量
+      console.log(num1);
+    }
+    fn1();
+    /*function fn2(){
+      console.log(num1);//报错，num1只能在fn1里面使用
+    }
+    fn2();*/
+    function fn3(num2){
+      console.log(num2);
+    }
+    fn3(2000);
+    //console.log(num2);//这样会报错，因为形参也是局部变量
+
+    function fn4(){
+      var num = 400;//全局变量num被覆盖
+      console.log(num);
+    }
+    fn4();
+
+    function fn5(){
+      var num = 600;
+      console.log(window.num);
+      //或者
+      console.log(this.num);
+    }
+    fn5();
+  </script>
+</body>
+</html>

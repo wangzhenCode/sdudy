@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 对象属性的增删改查
+    * 增：给对象增加属性
+    * 1.点语法：对象名.属性名，对象名.方法名()
+    * 2.括号语法：对象名['属性名']，对象名['方法名'](){};
+    *
+    * 删：删除对象的属性或方法
+    * 1.delete 对象名.属性名
+    * 2.delete 对象名['属性名']
+    * 3.delete 对象名.方法名，delete 对象名[‘方法名’]，注意方法名后面都不用加括号
+    * 3.delete有返回值，删除成功返回true，删除失败返回false；
+    *
+    * 改：改变对象的属性值
+    * 1.点语法：对象名.属性名 = "属性值";
+    * 2.括号语法：对象名.['属性名'] = '属性值';
+    *
+    * 查：就是调取对象属性的值或者调用对象的放法
+    * 1.点语法：对象名.属性名，对象名.方法名（）；
+    * 2.方括号法：对象名['属性名']，对象名['方法名']（）;
+    * 3.区别：属性为变量时，点语法不支持，而方括号语法支持。
+    *
+    * 注意：如果对象的属性名里含有非法字符，则不能用点语法，只能用方括号语法
+    * */
+    var person = {
+      name: '小王',
+      age: 10,
+      gander: '男',
+      study: function (){
+        console.log("正在学习");
+      }
+    };
+    //点语法
+    console.log(person.name);
+    console.log(person.age);
+    //注意这里的方法调用不能放到console.log()中
+    person.study();
+
+    //方括号语法
+    console.log(person['name']);
+    console.log(person['age']);
+    person['study']();
+
+    //比如定义一个变量
+    var str = 'age';
+
+    console.log(person.str);//点语法后面不能跟变量，因为person会在对象里面找有没有str，显然是没有的
+    //这里相当与赋值了
+    console.log(person[str]);
+
+
+
+    person.school = '枫树山小学';
+    person['teacher'] = 'Mi hr';
+    person.run = function (){
+      console.log('他在跑步');
+    };
+    person['play'] = function (){
+      console.log('他在网游戏');
+    }
+    console.log(person);
+
+
+
+    var de = delete person.school;
+    var te = delete person['teacher'];
+    var st = delete person.study;
+    var pl = delete person['play'];
+    console.log(de);
+    console.log(te);
+    console.log(st);
+    console.log(pl);
+    console.log(person);
+
+
+
+    person.age = 12;
+    person['age'] = 20;
+    person.run = function (){
+      console.log("你是谁");
+    }
+    person['run'] = function (){
+      console.log('我叫王振');
+    }
+    person.run();
+    console.log(person);
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    div{
+      width: 300px;
+      height: 300px;
+      background-color: #c28a1e;
+      position: fixed;
+      right: 3px;
+      bottom: -300px;
+    }
+    span{
+      width: 30px;
+      height: 30px;
+      background-color: #c42929;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      float: right;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span>x</span>
+  </div>
+
+
+  <script>
+    //获取div和span元素
+    var div = document.querySelector("div");
+    var span = document.querySelector("span");
+
+
+    //给span标签添加点击事件
+    span.onclick = function(){
+      div.style.display = "none";
+    };
+    //加计时器自动调用
+    var timer = setInterval(div_remoe, 10);
+
+    //向上移动
+    function div_remoe() {
+      var div_bottom = parseInt(getStyle(div).bottom);
+      if(div_bottom != 0){
+        div.style.bottom = div_bottom + 1 + "px";
+      }else{
+        clearInterval(timer);
+      }
+    }
+
+    //获取外部样式
+    function getStyle(ele) {
+      if(window.getComputedStyle == undefined){
+        return ele.currentStyle;
+      }else{
+        return window.getComputedStyle(ele, null);
+      }
+
+
+    }
+
+  </script>
+</body>
+</html>

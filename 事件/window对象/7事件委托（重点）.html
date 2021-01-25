@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <ul>
+    <li>我是第1个li</li>
+    <li>我是第2个li</li>
+    <li>我是第3个li</li>
+    <li>我是第4个li</li>
+    <li>我是第5个li</li>
+  </ul>
+  <script>
+    /*
+    * 事件委托：事件委托也可以叫事件代理，其实就是指利用事件的冒泡机制和事件对象给元素的祖先元素添加事件，点击该元素时，通过冒泡机制
+    *         从而冒到祖先元素触发事件
+    *
+    * 使用事件委托的好处：减少内从的利用，不容易出现bug（比如利用js再再ul中添加一个li）
+    * */
+
+    //点击每个li时普通方法获取每个li的内容
+    // var lis = document.querySelectorAll("li");
+    // for (var i=0;i<lis.length;i++){
+    //   lis[i].onclick = function () {
+    //     console.log(this.innerHTML);
+    //   }
+    // }
+
+    //事件委托实现上述功能
+    // var ul = document.querySelector("ul");
+    // ul.onclick = function (e) {
+    //   console.log(e.target.innerHTML);
+    // }
+
+
+
+    //使用事件委托的好处
+    // var lis = document.querySelectorAll("li");
+    // for(var i=0; i<lis.length;i++){
+    //   lis[i].onclick = function () {
+    //     console.log(this.innerHTML);
+    //   }
+    // }
+    //
+    // //1.使用普通方式再在ul中添加一个li，再点击,发现点击新的li没反应
+    // var newLi = document.createElement("li");
+    // newLi.innerHTML = "我是新的li";
+    // var ul = document.querySelector("ul");
+    // ul.appendChild(newLi);
+
+
+    //2.使用事件委托再
+
+    var ul = document.querySelector("ul");
+    ul.onclick = function (e) {
+      console.log(e.target.innerHTML);
+    }
+    // 在ul中添加一个li，再点击,发现点击新的正常打印
+    var newLi = document.createElement("li");
+    newLi.innerHTML = "我是新的li";
+    ul.appendChild(newLi);
+
+  </script>
+</body>
+</html>

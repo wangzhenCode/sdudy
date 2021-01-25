@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #box{
+      width: 200px;
+      height: 200px;
+      background-color: #c42929;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box"></div>
+  <button>删除事件</button>
+<script>
+
+  /*
+  * 定义一个函数，为某个元素节点添加事件（解决DOM02级事件处理程序在IE下的兼容问题）
+  *
+  * 参数说明：
+  * ele:元素节点
+  * eventName:事件名
+  * callBack:事件处理函数名
+  * eventStream：事件流
+  *
+  * */
+
+  function addEvent(ele, eventName, callBack, eventStream) {
+    //判断是在google还是IE
+    if(ele.addEventListener == undefined){
+      //IE浏览器
+      ele.attachEvent('on' + eventName, callBack);
+      //google浏览器
+    }else {
+      ele.addEventListener(eventName, callBack, eventStream);
+    }
+  }
+
+  function fn() {
+    console.log('hello');
+  }
+
+
+  var div = document.getElementById("box");
+  console.log(div);
+  //给div添加点击事件
+  addEvent(div, "click", fn, false);
+
+
+  //点击按钮删除事件
+  function removeEvent(ele, eventName, callBack, eventStream){
+    //判断是IE还是google
+    if(ele.removeEventListener == undefined){
+      //删除IE下的事件
+      ele.detachEvent("on" + eventName, callBack);
+    }else{
+      //删除goolge下的事件
+      ele.removeEventListener(eventName, callBack, eventStream);
+    }
+  }
+
+  //获取按钮元素节点
+  var button = document.getElementsByTagName("button")[0];
+  button.onclick = function () {
+    //执行删除操作
+    removeEvent(div, "click", fn, false);
+  }
+
+
+</script>
+</body>
+</html>

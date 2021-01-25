@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: #56db16;
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+  <script>
+    
+    // 获取div元素
+    var div = document.getElementById("box");
+    
+    //给div添加mousedown事件
+    div.onmousedown = function (ev) {
+
+      ev = ev || window.event;
+      //获取鼠标点击的点距离div边界的距离
+      var div_x = ev.offsetX;
+      var div_y = ev.offsetY;
+
+      //再给doucument添加鼠标移动事件（mousemove）
+      document.onmousemove = function (ev) {
+        ev = ev || window.event;
+        //获取鼠标点击的点距离视口的距离
+        var body_x = ev.clientX;
+        var body_y = ev.clientY;
+
+        //给left和top赋值
+        div.style.left = (body_x - div_x) + 'px';
+        div.style.top = (body_y - div_y) + 'px';
+      }
+
+      //给div添加onmouseup事件，清除onmousemove
+      div.onmouseup = function () {
+        document.onmousemove = null;
+      }
+
+    }
+    
+    
+  </script>
+</body>
+</html>

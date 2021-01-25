@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div{
+      width: 300px;
+      height: 600px;
+      background-color: red;
+      white-space: nowrap;
+      overflow: scroll;
+    }
+    body{
+      height: 3000px;
+    }
+  </style>
+</head>
+<body>
+  <div>我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我
+    是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文
+    本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+    我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本
+  </div>
+
+  <script>
+    var div = document.querySelector('div');
+    //scroll事件：当滚动条被拉动时触发该事件，该事件通常与scrollTop/scrollLeft配合使用
+    // div.onscroll = function (){
+    //   console.log('hello')
+    // }
+
+    /*
+    * scrollTop属性：该属性的作用是获取或设置拉动滚动条时被卷上去的内容高度，结果为数值
+    * scrollLeft属性：该属性的作用是获取或设置拉动滚动条时被卷进左侧的内容的距离，结果为数值
+    *
+    * */
+    // div.onscroll = function (){
+    //   console.log(div.scrollTop);
+    // };
+    // div.onscroll = function (){
+    //   console.log(div.scrollLeft);
+    // };
+    // window.onscroll = function(){
+    //   console.log('wold');
+    // }
+
+    /*
+    * 在使用scrollTop/scrollLeft时注意：在拉动滚动条时获取被卷上去的内容的高度时，不可以使用window.scrollTop获取window.Left,
+    * 因为window对象没有scrollTop属性和scrollLeft属性，那么如果要获取scrollTop/scrollLeft属性的值，则需要使用
+    * document.documentElement.scrollTop || document.body.scrollTop
+    * */
+    window.onscroll = function () {
+      var obj = document.documentElement || document.body;
+      console.log(obj.scrollTop);
+    }
+
+  </script>
+</body>
+</html>

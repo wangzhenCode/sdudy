@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <!--万物皆对象，创建对象的方法多种多样-->
+  <script>
+
+    /*根据字面创建对象*/
+    //创建一个人的对象
+    var person = {
+      name: 'xiaoWang',
+      sex: '男',
+      height: '175cm',
+      weight: '56kg',
+      study: function (){
+        console.log('正在学习web前端');
+      },
+      playGames: function (){
+        console.log('挺喜欢玩游戏');
+      }
+    };
+    console.log(person);
+    //创建一个computer对象
+    var computer = {
+      bran: 'Dell',
+      price: '20000',
+      name: '笔记本电脑',
+      play: function (){
+        console.log('可以打游戏');
+      },
+      study: function (){
+        console.log('可以用来学习');
+      }
+    };
+    console.log(computer);
+  </script>
+</body>
+</html>

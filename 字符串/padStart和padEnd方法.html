@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * padStart方法
+    * 1.作用：将字符串按照规定长度从字符串左侧补齐
+    * 2.格式：字符串.padStart(长度, “字符”);
+    *
+    * endStart方法
+    * 1.作用：将字符串按照规定长度末尾补齐
+    * 2.格式：字符串.padEnd(长度，“字符”);
+    * */
+    var str = "asdddgd";
+    var res =  str.padStart(10, '-');
+    console.log(res);
+
+    var res = str.padEnd(10, "*");
+    console.log(res);
+
+
+  </script>
+</body>
+</html>

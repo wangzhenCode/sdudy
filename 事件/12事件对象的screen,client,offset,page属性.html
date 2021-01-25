@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #box{
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+    }
+    body{
+      height: 3000px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+
+  </div>
+  <script>
+    var div = document.getElementById("box");
+    div.onclick = function (ev) {
+      //screenX,screenY属性:表示鼠标点击的点距离屏幕的左侧和上侧的距离
+      console.log(ev.screenX,ev.screenY);
+      //clienX,clientY属性：表示鼠标点击的点的距离视口的左侧和上册的距离，不受滚动条的影响
+      console.log(ev.clientX,ev.screenY);
+      //pageX,pageY属性：表示鼠标点击的点距离页面的左侧和上侧的距离，受滚动条的影响
+      console.log(ev.pageX,ev.pageY);
+      //offsetX,offsetY属性：表示鼠标点击的点距离当前元素的左侧和上侧的距离
+      console.log(ev.offsetX,ev.offsetY);
+    }
+  </script>
+</body>
+</html>

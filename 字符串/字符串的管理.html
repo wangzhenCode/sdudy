@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*字符串的管理和数组类似，字符串的每个字符也有下标，下标从0开始到字符串的长度-1*/
+    /*字符串可以遍历成字符型*/
+    var str = "helloworld";
+    for(var i = 0; i<str.length; i++){
+      console.log(str[i]);
+    }
+    console.log("---------------------for in 遍历------------------");
+    for(var i in str){
+      console.log(`${i}------${str[i]}`);
+    }
+    console.log("---------------------for of 遍历------------------");
+    for(var val of str){
+      console.log(val);
+    }
+    console.log("---------------------forEach 遍历------------------");
+
+    /*forEach(function (val, index){//不可以遍历字符串，因为forEach是数组对象的方法；
+      console.log(val+ "----"+index);
+    });*/
+
+    //利用数组的方式对字符串的增删改都不起作用，不可用
+    /*str[2] = "x";
+    delete str[2];
+    str[20] = "i";*/
+
+    console.log(str);
+
+    //修改数组的方式只对数组起作用
+    var arr = [1,2,3,4,5];
+    arr[1] = "a";
+    delete arr[3];
+    arr[20] = 8;
+    console.log(arr);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+  /*
+  * 事件对象的属性：
+  *   type:判断事件对象的类型，返回值为事件名称（比如click,keyDown等）
+  *   ctrlKey:判断是否按了ctrl键，如果是，返回true；否则，返回false；
+  *   altKey:判断是否按了alt键，如果是，返回true；否则，返回false；
+  *   shiftKey:判断是否按了shift键，如果是，返回true；否则，返回false；
+  *
+  * */
+
+  document.onclick = function (ev) {
+    ev = ev || window.event;
+    console.log(ev.type);//返回值为事件名称
+  };
+
+  //键盘事件
+  document.onkeydown = function (ev) {
+    ev = ev || window.event;
+    console.log("ctrlKey="+ev.ctrlKey);
+    console.log("altKey="+ev.altKey);
+    console.log("shiftKey="+ev.shiftKey);
+  };
+
+  //同时按下ctrl和shift
+  document.onkeydown = function (ev) {
+    ev = ev || window.event;
+    if(ev.ctrlKey && ev.shiftKey) {
+      console.log('我同时按下了CTRL键和SHIFT键');
+    }
+
+  };
+</script>
+
+</body>
+</html>

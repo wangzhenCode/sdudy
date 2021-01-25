@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <!--求当前时间距离1949年10月1日多少年-->
+
+  <script>
+    //1.这里可以利用时间做差法进行计算
+    var date = new Date();
+    var date2 = new Date('1949-10-1');
+    var second = Math.abs(date - date2);
+    // 利用parseInt转化为整数
+    var year = parseInt(second/1000/60/60/24/365);
+    console.log(year);
+  //  也可以利用floor方法向下取整
+    var year = Math.floor(second/1000/60/60/24/365);
+    console.log(year);
+
+    //2.利用getTime方法，先获取当前日期和1949-10-1距离1970年1月1日0时0分0秒的毫秒数，在做差值
+    var date  = new Date();
+    var date2 = new Date('1949-10-1');
+    var year = parseInt((date.getTime()-date2.getTime())/1000/60/60/24/365);
+    console.log(year);
+
+    //2.将字符串单子逆序输出，例如”wellcome to BeiJing“输出为”BeiJing to WellCome“
+    var str = "WellCome to BeiJing";
+    //转化为数组
+    var res = str.split(" ");
+    //转化为字符串
+    var arr = res.reverse().join(" ");
+    console.log(arr);
+   // var d =  str['split'](' ');这也是调方法的方式，比忘记了
+   //  console.log('11111'+d);
+
+    //3.将字符串‘iOS Andriod HTML5 Java’输出为‘avaJ 5LMTH doirdnA Soi’;
+    var str = 'iOS Andriod HTML5 Java';
+    var res = str.split("").reverse().join("");
+    console.log(res);
+
+    //4.输入用户名，判断用户名是否合法，要求：用户名不能我空，长度必须在4-16位，第一个字符不能时数字，并且用户名只能是有
+    //    字母，数组，下划线构成
+
+    var userName = prompt("请输入您的用户名：");
+    if(userName == ""){//用户名不能为空
+      alert("用户名不能为空");
+    }else if (userName.length<4 || userName.length>16){//控制长度位4-16位
+      alert("用户名的长度必须是4-16位")
+    }else if (userName.charAt(0)>'0'&& userName.charAt(0)<'9'){
+      alert("用户名不能以数字开头");
+    }else {
+      //遍历字符串
+      for(var i=0;i<userName.length;i++){
+        //拿到每一个字符
+        var chr = userName.charAt(i);
+        //必须有数字，字母，和下划线组成
+        if(chr>='a'&& chr <='z' || chr >= 'A'&&chr <= 'Z' || chr >= '0'&& chr <='9' ||chr == '_'){
+
+        }else{
+          alert("用户名必须由字母,数字,下划线构成");
+          break;
+        }
+      }
+    }
+
+  </script>
+
+</body>
+</html>

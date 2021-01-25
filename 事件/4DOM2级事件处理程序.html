@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: #56db16;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button>删除事件</button>
+
+    <ul>
+        <li>我是第1个li</li>
+        <li>我是第2个li</li>
+        <li>我是第3个li</li>
+        <li>我是第4个li</li>
+        <li>我是第5个li</li>
+    </ul>
+    <script>
+        /*
+        * js中事件的添加方式：DOM2级事件处理程序
+        * 1.添加方式：元素节点.addEventLintner(参数1,参数2,参数3);
+        * 2.参数说明：
+        *   a.参数1：事件名称（不能加on）；
+        *   b.参数2：事件处理函数，可以是匿名函数，也可以是有名函数（有名函数不加括号）；
+        *   c.参数3：事件流，值为true（事件扑获）或者false（默认，事件冒泡）
+        * 3.删除方式：元素节点.removeEventListner(参数1,参数2,参数3);
+        * 4.参数说同上，上面怎么写，删除就怎么写，但是如果要删除事件，添加时不能写匿名函数，只能写有名函数
+        * 5.注意：
+        *   1.DOM2级事件处理程序不支持IE8及其一下版本
+        *   2.如果一个元素节点上通过DOM2级事件处理程序添加多个相同的事件，那么这些事件可以同时存在
+        * 6.DOM2级事件处理程序中this如何使用，直接在其对应的事件处理函数中直接使用，这个this就代表了当前处理事件对应的元素
+        * */
+
+        var div = document.getElementById("box");
+        //添加事件，参数2为匿名函数写法
+        // div.addEventListener("click",function (){
+        //     console.log("hello");
+        // },false);
+
+        //添加事件，参数2为有名函数写法
+        div.addEventListener("click",fn,false);
+        div.addEventListener("click",fn1,false);
+        function fn(){
+            console.log("hello");
+        }
+        function fn1(){
+            console.log("world");
+        }
+
+
+        var button = document.getElementsByTagName("button")[0];
+        button.onclick = function (){
+            //删除事件
+            div.removeEventListener("click",fn,false);
+        }
+
+
+        //this的使用
+        var lis = document.getElementsByTagName("li");
+        for(var i=0;i<lis.length;i++){
+            lis[i].onclick = function (){
+                console.log(this.innerHTML);//this直接使用
+            }
+        }
+    </script>
+</body>
+</html>

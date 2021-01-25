@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * btoa方法
+  * 1.作用：将字符串按照Base64的编码方式进行编码
+  * 2.格式：btoa("字符串“)；
+  *
+  * atob方法
+  * 1.作用：将btoa编码过的字符串进行解码
+  * 2.格式：atob("字符串");
+  * */
+
+  var str = "hello world";
+  var res = btoa(str);//注意，他不识别中文，会报错
+  console.log(res);
+
+  var res2 = atob(res);
+  console.log(res2);
+
+  /*
+  * encodeURIComponent方法；
+  * 1.将字符串进行ASCII编码
+  * 2.格式：encodeURIComponent("字符串");
+  *
+  * codeURIComponent方法
+  * 1.将ASCII码进行解码
+  * 2.格式：decodeURIComponent("字符串");
+  * */
+
+  var str = ":?name=王振&password=123456&gender=男";
+  var res = encodeURIComponent(str);
+  console.log(res);
+
+  var res1 = decodeURIComponent(res);
+  console.log(res1);
+
+</script>
+</body>
+</html>

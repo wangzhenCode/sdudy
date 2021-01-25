@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*var arr = [1,25,56,4,289,6,33];*/
+    /*var res = arr.sort();//显然这样排序不行
+    console.log(res);*/
+
+    //所以对于数组元素是数值性的，必须采用sort传参的方法
+    /*arr.sort(function (a, b){
+      return a - b;//按照升序排序
+    });
+    console.log(arr);*/
+
+
+    //当数组中的的元素为对象时，采用什么方法排序呢
+    var arr = [
+      {name: "Tom",
+        age: 28,
+        salary: 3000
+      },
+      {name: "Jack",
+       age: 20,
+       salary: 3000
+      },
+      {name: 'Kobe',
+       age: 30,
+        salary: 10000
+      },
+      {name: 'Lucy',
+      age:45,
+      salary: 5000
+      },
+      {name:'Lily',
+        age:21,
+      salary: 3000
+      }
+    ];
+    //再用sort方法进行排序
+   /* arr.sort();
+    console.log(arr);*///没任何反应
+
+    //采用传参排序再试试
+    /*arr.sort(function (a, b){
+      return a.age - b.age;//采用年龄的升序排名
+    });
+    console.log(arr);*///这样显然就可以了，因为这时的a,b相当与数组对象，直接点来拿到对应的属性值
+
+    //采用工资的升序排名，如果工资相等，采用年龄的升序排名
+    arr.sort(function (a, b){
+      //判断工资相等时用年龄的升序排名
+      if(a.salary == b.salary){
+        return a.age - b.age;
+      }
+      return a.salary - b.salary;
+    });
+    console.log(arr);
+
+  </script>
+</body>
+</html>

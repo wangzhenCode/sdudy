@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //还记得以前创建数组的方式
+    //1.利用构造方法创建数组
+    var arr = new Array(1, 2, 3, 4,5);
+    console.log(arr);
+    //2.利用字面量创建数组对象
+    var arr = ['a', 'b','c' ,'d'];
+    console.log(arr);
+
+    //创建对象
+    /*1.利用构造方法的形式*/
+    var obj = new Object({
+      a: 1,
+      b: 2,
+      c: 3,
+      d: 4
+    });
+    console.log(obj);
+    //2.直接创建
+    var obj = {
+      aa: 1,
+      bb: 2,
+      cc: 3,
+      dd: 4
+    };
+    console.log(obj);
+
+    //创建字符串对象
+    //1.使用构造方法创建
+    //格式：var 字符串对象名 = new String('创建的字符串');
+    var str = new String("string");
+    var l = str.length;//字符串对象可以调用字符串的方法
+    console.log(l)
+    console.log(typeof str, str);
+
+    //2.字面量形式创建
+    //格式：var 变量名 = ‘创建的字符串’;
+    var str = "word";
+    var s = str.length;
+    //为什么这里的基本变量字符串也可以调用字符串的方法，因为在调用方法和属性的那一刻，服务器会将字符串变量自动封装成字符串对象，当方法和属性调用完后，
+    //又将其转化成基本类型的字符串变量形式
+    console.log(typeof str, str);
+    console.log(s);
+
+
+  </script>
+</body>
+</html>

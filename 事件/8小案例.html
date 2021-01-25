@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body>
+
+<div>
+  <button onclick="btnClick(this)">按钮1</button>
+  <span></span>
+</div>
+
+<div>
+  <button onclick="btnClick(this)">按钮1</button>
+  <span></span>
+</div>
+
+<div>
+  <button onclick="btnClick(this)">按钮1</button>
+  <span></span>
+</div>
+  <script>
+
+    function btnClick(obj) {
+      var num = parseInt(Math.random()*255+1).toString();
+     obj.nextElementSibling.innerHTML = num;
+    }
+
+
+
+    // var r,g,b;
+    //   var button = document.getElementsByTagName("button")[0];
+    //   this.button.onclick = function () {
+    //     var span0 = document.getElementsByTagName("span")[0];
+    //     r = span0.innerHTML =  parseInt(Math.random()*255 +1);
+    //document.body.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+    //   }
+    //
+    //   var button = document.getElementsByTagName("button")[1];
+    //   this.button.onclick = function () {
+    //     var span1 = document.getElementsByTagName("span")[1];
+    //     g = span1.innerHTML =  parseInt(Math.random()*255 +1);
+    //     document.body.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+    //   }
+    //
+    //   var button = document.getElementsByTagName("button")[2];
+    //   this.button.onclick = function () {
+    //     var span2 = document.getElementsByTagName("span")[2];
+    //     b = span2.innerHTML =  parseInt(Math.random()*255 +1);
+    //     document.body.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+    //   }
+
+
+
+
+
+
+  </script>
+</body>
+</html>

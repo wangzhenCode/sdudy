@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 值传递：值传递是指将数据（基本类型的数据）的副本传递给对方，对方的操作不会影响原始数据
+    * 地址传递：地址传递是指将数据的地址传递给对方
+    *         对地址的操作，会影响原始数据
+     */
+
+
+    /*
+      例子：值传递
+      var arr = [10,20,30,40];
+      function fn(val){
+        val = 100;
+      }
+    //这里传递的是arr[0],可以看到，arr[0]为基本类型，所以调用函数，不会影响原始数组
+      fn(arr[0]);
+      console.log(arr);
+     */
+
+    /*
+    * 地址传递
+    */
+    var arr = [10,20,30,40];
+    function fn(val){
+      val[0] = 100;
+    }
+    fn(arr);//这里传递的是数组arr的地址
+    console.log(arr);
+
+    /*var obj = {
+      a: 1,
+      b: 2,
+      c: 3
+    }
+    function fun(x){
+      x['a'] = 200;
+    }
+    fun(obj);//引用类型
+    console.log(obj);
+    */
+
+  </script>
+</body>
+</html>

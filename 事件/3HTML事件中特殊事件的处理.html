@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            font-size: 100px;
+            text-align: center;
+            line-height: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--在html事件中，下面这种写法，表示一个时间调用两个函数，并且都会执行-->
+    <div onclick="f2();f1()">1</div>
+    <!--在html事件中，两个相同的事件应用在同一个元素节点上，只会执行第一个，第二个会被屏蔽-->
+    <div onclick="f1()" onclick="f2()">2</div>
+
+    <script>
+        var div1 = document.getElementsByTagName("div")[0];
+        function f1(){
+            console.log("f1()");
+        }
+        function f2(){
+            console.log("f2()");
+        }
+    </script>
+</body>
+</html>

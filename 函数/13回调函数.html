@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 回调函数：如果一个函数被当作另一个函数的参数使用，那么这个函数就是回调函数，回调函数通常时匿名函数
+    *
+    * */
+    //例如数组排序函数
+    var arr = [0,12,2,4,58,12,23];
+    arr.sort(function (a,b){//这里的function就是回调函数
+      return a-b;
+    });
+    console.log(arr);
+
+
+    //再比如过滤器filter函数，它是指将满足条件数组元素过滤出来组成新的数组，返回给调用者
+    var res = arr.filter(function (val){//这里可以传三个参数，分别为数组元素的值val，下标index，和数组对象，用到什么传什么
+      return val > 5;
+    });
+    console.log(res);
+
+  </script>
+</body>
+</html>

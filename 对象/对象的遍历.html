@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    var obj = {
+      a: 1,
+      b: 2,
+      c: 3,
+      d: 4
+    }
+    /*
+    * 对象的遍历一般使用的是for in，具体语法为for(var 变量名 in 对象名){}
+    * */
+    for(var name in obj){
+      console.log(name);
+    }
+    //也可以拿到属性值
+    var obj = {
+      a: 1,
+      b: 2,
+      c: 3,
+      d: 4
+    }
+    for(var val in obj){
+      console.log(val +"-----"+ obj[val]);//注意，这里不能用点语法拿属性值，因为这里的属性是个变量
+    }
+    /*
+    * 遍历对象还有一个object.keys(对象名)；该方法返回值为对象的属性名数组
+    * */
+    console.log('------------------------------------------------')
+    var obj = {
+      a: 1,
+      b: 2,
+      c: 3,
+      d: 4
+    }
+    var keys = Object.keys(obj);
+    console.log(keys);
+    //也可以拿到属性值
+    for(var i in keys){
+      console.log(keys[i] + "----" + obj[keys[i]]);
+    }
+    /*
+    * 遍历对象还有Object.values（对象名），这个方法返回的是对象的所有属性值，同时也是个数组
+    * */
+    console.log("================================")
+    var obj = {
+      a: 1,
+      b: 2,
+      c: 3,
+      d: 4
+    }
+    var va = Object.values(obj);
+    console.log(va);
+
+    /*
+    * 对象遍历还有Object.entries（对象名）方法，可以将属性值和属性名都拿到，返回值是个二维数组
+    * */
+    console.log("================================")
+    var obj = {
+      a: 1,
+      b: 2,
+      c: 3,
+      d: 4
+    }
+    var ent = Object.entries(obj);
+    console.log(ent);
+  </script>
+</body>
+</html>

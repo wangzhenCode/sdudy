@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * Math对象的ceil方法，是向上取整，取到的是向上的最小正数
+  * 格式：Math.ceil(数据);
+  *
+  * Math对象的floor方法，是向下取整，取到的是向下的最大整数
+  * 格式：Math.floor(数据);
+  *
+  * Math对象的round方法是取小数的四舍五入，取到小数点后一位四舍五入
+  * 格式：Math.round(数据)；
+  *
+  * Math的pow方法可以传两个参数，是指幂运算
+  * 格式：Math.pow(x,y);指x的y次方
+  *
+  * Math的max方法求数据的最大值
+  * 格式：Math.max(值1,值2,值3,值4,...);
+  *
+  * Math的min方法求数据的最小值
+  * 格式：Math.min(值1,值2,值3,值4,...);
+  *
+  * Math的abs方法是求一个数的绝对值
+  * 格式：Math.abs(数据);
+  *
+  * Math的sqrt方法是求一个数的算数平方根；
+  * 格式：Math.sqrt(数据);
+  *
+  * */
+
+  //向上取整
+  var num = 3.25;
+  var min = Math.ceil(num);//向上取整，取到的是最小整数
+  console.log(min);
+
+  //向下取整
+  var max = Math.floor(num);//向下取整，取到的是最大整数
+  console.log(max);
+
+  //四舍五入
+  var dec = 5.26;
+  var int = Math.round(dec);//四舍五入
+  console.log(int);
+
+  //求幂运算
+  var x = 2,y = 10;
+  var Y = Math.pow(x, y);
+  console.log(Y);
+
+  //求一推数据的最大值
+  var max1 = Math.max(1,5,8,6,0,7);//注意这里不能传数组
+  console.log(max1);
+
+  //求一堆数据的最小值
+  var min1 = Math.min(1,5,8,6,0,7);//注意这里不能传数组
+  console.log(min1);
+
+  //求一个数的绝对值
+  var x = -9;
+  var y = Math.abs(x);
+  console.log(y);
+
+  //求一个数的算数平方根
+  var z = 9;
+  var res = Math.sqrt(z);
+  console.log(res);
+
+</script>
+</body>
+</html>

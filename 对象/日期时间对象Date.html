@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+
+  /*
+  * 如何创建日期时间对象
+  * 1.格式：var 日期时间对象的值 = new Date();返回系统放当前的时间日期对象；
+  * 2.格式: var 日期时间对象的值 = new Date(日期时间字符串);返回指定的日期事件对象;
+  * 3.格式: var 日期时间对象的值 = new Date(毫秒数);返回1970年1月1日0时0分0秒时间对象；
+  *
+  *
+  *
+  *
+  * */
+  var date = new Date();//返回值为时间对象（object）
+  console.log(date);
+
+  var date = new Date("2008-12-12 13:14:22");//返回值为时间对象（object）
+  console.log(date);
+
+  var date = new Date(1000);//1秒等于1000毫秒，返回值为时间对象（object）
+  console.log(date);
+
+
+</script>
+
+</body>
+</html>

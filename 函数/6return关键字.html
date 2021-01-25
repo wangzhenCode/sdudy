@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * return 关键字，调用函数时，如果函数中有return，那么会将函数需要返回的数据返回给调用者
+    *   1.使用格式：return 返回值;
+    *   2.使用return时的注意事项：
+    *     1）return 后面可以是常量，变量，表达式；
+    *     2）如果调用的函数内部有多个return，那么只返回符合条件的一个；
+    *     3）return 和后面的返回这不能换行，因为javascrip中，一行代码执行时可以没有分号
+    *     4）没有返回值的函数中也有一个默认的return，在后台可以看到，没有return时，会打印出undefined；
+    *     5）return也可以作为函数的结束标志，格式为:return;
+    *
+    * */
+
+    function fn() {
+      //return 100;//常量
+      //return 50 + 50;//表达式
+      var l = 6;
+      return l;//变量
+    }
+    var res = fn();
+    console.log(res);
+
+    function fn1(){
+      return 1;//只执行这一个，想要执行后面的，要加条件判断，但是也只能执行一条
+      return 2;
+      return 3;
+      return 4;
+    }
+    var res1 = fn1();
+    console.log(res1);
+
+    function fn2(){
+      return //javascrip中他认为这就是一行完整代码，返回undefined；
+      100;
+    }
+    var res2 = fn2();
+    console.log(res2);
+
+    function fn3(){
+      console.log(1000);
+    }
+    var res3 = fn3();//函数fn3没有返回值，但是这里接受返回值，所以在调用函数的同时，也返回了默认的undefiend
+    console.log(res3);
+
+
+  </script>
+</body>
+</html>

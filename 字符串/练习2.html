@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <!--将下列字符串的每个字符出现的次数统计出来
+  ’jjakfkdskowrwjudsunvmvoswqjpqo‘-->
+  <script>
+
+    var str = 'jjakfkdskowrwjudsunvmvoswqjpqo';
+    var obj={};
+    /*
+    * 思路：将字符串中的每个字符取出，判断该字符是否在对象obj中出现过，如果没有出现过，则将该字符添加到obj对象中，并将其属性值变成1；
+    * 如果该字符在obj对象中出现过，那么将其值加1
+    * */
+    for(var i = 0; i<str.length; i++){
+      //拿到每一个字符
+      var char = str.charAt(i);
+      //判断字符是否在obj中出现过，由于这里的char是个变量，所以不能用点语法，只能用方括号语法
+      if(!obj[char]){//这里要注意，如果char是个变量，则不能用点语法，而且也不用引号
+        obj[char] = 1;
+      }else {
+        obj[char] = obj[char] + 1;
+      }
+    }
+    console.log(obj);
+
+  </script>
+</body>
+</html>

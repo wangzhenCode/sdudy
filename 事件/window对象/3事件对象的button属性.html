@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * 事件对象的button属性值为0，1，2
+  * 1 表示点击的是鼠标中间键
+  * 2 表示点击的是鼠标右键
+  * 0 表示点击的是鼠标左键
+  * */
+  document.onclick = function (e) {
+    console.log(e.button);
+  }
+  document.oncontextmenu = function (e) {
+    e.preventDefault();
+    console.log(e.button);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #ces{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="ces"></div>
+    <button>删除事件</button>
+    <ul>
+        <li>我是第1个li</li>
+        <li>我是第2个li</li>
+        <li>我是第3个li</li>
+        <li>我是第4个li</li>
+        <li>我是第5个li</li>
+    </ul>
+    <h2>点我</h2>
+
+    <h1>我是测试多个相同事件被覆盖的</h1>
+<script>
+    /*
+    * js中添加事件的方式2：DOM0级事件处理的应用程序
+    * 添加方式1：元素节点.on事件名称 = function(){};
+    * 添加方式2：元素节点.on事件名称 = 事件处理函数名称（后面不能加括号）；
+    *
+    * 删除事件：元素节点.on事件名称 = null;
+    * DOM0级事件中this的使用，在其对应的事件处理函数中直接使用this即可，这个this就代表当前处理的事件对应的元素
+    *
+    * 注意：如果一个元素被添加了多个相同的事件，那么后面的事件会覆盖前面的事件
+    * */
+
+    var div = document.getElementById("ces");
+    //第一种方式添加事件
+    div.onclick = function (){
+        console.log("我被打印了");
+    };
+    var button = document.getElementsByTagName("button")[0];
+
+    //第二种方式添加事件，点击该事件，删除div的事件
+    button.onclick = fn;
+    function fn(){
+        div.onclick = null;
+    }
+
+    //点击那个li打印那个里面的内容
+    var li = document.getElementsByTagName("li");
+    for(var i=0;i <li.length;i++){
+        li[i].onclick = function (){
+            console.log(this.innerHTML);//this的使用，指代当前执行事件的li
+        };
+    }
+
+    //点击事件，只执行一次
+    var h2 = document.getElementsByTagName("h2")[0];
+    h2.onclick = function (){
+        console.log("我只打印一次哦");
+        h2.onclick = null;//在函数里面使用，就实现了打印一次
+    }
+
+    //同一个元素的多个相同事件会被后面的覆盖
+    var h1 = document.getElementsByTagName("h1")[0];
+    h1.onclick = function (){
+        console.log('hello');
+    }
+    h1.onclick = function (){
+        console.log("wold");
+    }
+
+</script>
+</body>
+</html>

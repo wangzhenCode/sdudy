@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  </div>
+<script>
+  /*
+  * touchstart事件：手指在该元素上触摸时触发该事件
+  * touchmove事件：手指在该元素上按住拖动时触发该事件
+  * touchend事件：手指在离开元素时触发该事件
+  *
+  * 注意：以上三个事件都时移动端设备上的事件
+  * */
+  var div = document.querySelector("div");
+
+  // div.ontouchstart = function (e) {
+  //   console.log(e.type);
+  // };
+  //
+  // div.ontouchmove = function (e) {
+  //   console.log(e.type);
+  // };
+  //
+  // div.ontouchend = function (e) {
+  //   console.log(e.type);
+  // };
+
+
+  /*
+  * 移动端上述事件常用到的属性：
+  * touches: TouchList {0: Touch, length: 1} 该属性主要保存放到频幕上的所有触摸点的相关信息
+  * targetTouches: TouchList {0: Touch, length: 1} 该属性主要保存和当前元素相关的触摸点信息
+  * changedTouches: TouchList {0: Touch, length: 1} 该属性主要保存了由触摸点变化而形成的相
+
+  div.ontouchstart = function (e) {
+    console.log(e.touches);关信息
+    * */
+    console.log(e.targetTouches);
+    console.log(e.changedTouches);
+    console.log('-------------------')
+  };
+
+  //手指离开频幕上时，targetTouches/touches属性均不会保存数据
+  div.ontouchend = function (e) {
+    console.log(e.touches);
+    console.log(e.targetTouches);
+    console.log(e.changedTouches);
+    console.log('-------------------')
+  };
+
+
+  div.ontouchmove = function (e) {
+    console.log(e.touches);
+    console.log(e.targetTouches);
+    console.log(e.changedTouches);
+  }
+</script>
+</body>
+</html>

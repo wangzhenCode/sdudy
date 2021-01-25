@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 有参有返回值的函数的定义格式
+    * function 函数名 (形参1，形参2，...) {
+    *   函数体；
+    *   return 返回值；
+    * }
+    * 调用：var 变量 = 函数名 (实参1，实参2，...);
+    * */
+
+    //定义一个函数，求两个数的和，并将其和作为返回值返回，拿到返回值后，判断奇偶性
+    function add(num1, num2){
+      var sum = num1 + num2;
+      return sum;
+    }
+
+    var res = add(3,4);
+    if(res % 2 == 0){
+      console.log("偶数")
+    }else{
+      console.log("奇数");
+    }
+  </script>
+</body>
+</html>

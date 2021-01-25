@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <select name="province" id="province">
+    <option value="">请选择</option>
+  </select>
+  <span>:省</span>
+
+  <select name="city" id="city">
+    <option value="">请选择</option>
+  </select>
+  <span>:市</span>
+
+  <select name="district" id="district">
+    <option value="">请选择</option>
+  </select>
+  <span>:区</span>
+
+  <script>
+
+    var provinceData = ['甘肃省', '湖南省', '安徽省'];
+    var cityData = [
+      ['兰州市', '天水市', '平凉市', '白银市'],
+      ['长沙市', '邵阳市', '益阳市'],
+      ['合肥市', '芜湖市', '蚌埠市', '淮南市'],
+    ];
+    var districtData = [
+      [
+        ['兰州一区', '兰州二区', '兰州三区', '兰州四区'],
+        ['天水一区', '天水二区', '天水三区', '天水四区'],
+        ['平凉一区', '平凉二区', '平凉三区', '平凉四区'],
+        ['白银一区', '白银二区', '白银三区', '白银四区']
+      ],
+      [
+        ['雨花区', '天心区', '芙蓉区', '望城区', '开福区'],
+        ['邵阳一区', '邵阳二区', '邵阳三区', '邵阳四区'],
+        ['益阳一区', '益阳二区', '益阳三区', '益阳四区']
+      ],
+      [
+        ['合肥一区', '合肥二区', '合肥三区', '合肥四区', '合肥五区'],
+        ['芜湖一区', '芜湖二区', '芜湖三区', '芜湖四区'],
+        ['蚌埠一区', '蚌埠二区', '蚌埠三区', '蚌埠四区'],
+        ['田家庵', '蔡家岗']
+      ],
+
+
+    ];
+
+    var province = document.getElementById("province");
+    var city = document.getElementById("city");
+    var district = document.getElementById("district");
+
+    var provinceValue;
+    //显示省份
+    for (var i = 0; i < provinceData.length; i++) {
+      //创建option节点
+      var opt = document.createElement("option");
+      //给option的value属性赋值
+      opt.value = i;
+      //给option节点添加内容
+      opt.innerHTML = provinceData[i];
+      //将创建的option节点添加到select中
+      province.appendChild(opt);
+    }
+    //显示市,点击省时，切换为相应的城市
+    province.onchange = changeCity;
+    //显示区，点击市时，且还区
+    city.onchange = changeDistrict;
+    
+    function changeCity() {
+      //确定选中的节点
+      provinceValue = province.value;
+      //选择之前清空其他选项
+      city.length = 1;
+      //当市只保留一个时，区也只保留一个
+      district.length = 1;
+      //当provinceValue不为空时添加节点
+      if(provinceValue != ''){
+        for(var i=0; i<cityData[provinceValue].length; i++){
+          //创建option节点
+          var opt = document.createElement("option");
+          //给option的value赋值
+          opt.value = i;
+          //给option节点添加内容
+          opt.innerHTML = cityData[provinceValue][i];
+          //将创建的节点添加到select中
+          city.appendChild(opt);
+        }
+      }
+    }
+
+    //显示区
+    function changeDistrict() {
+      //拿到选中的市
+      var cityValue = city.value;
+      district.length = 1;
+      if(cityValue != ''){
+        for(var i=0; i<districtData[provinceValue][cityValue].length; i++){
+          //创建option节点
+          var opt = document.createElement("option");
+          //给option的value赋值
+          opt.value = i;
+          //给option节点添加内容
+          opt.innerHTML = districtData[provinceValue][cityValue][i];
+          //将创建的节点添加到select中
+          district.appendChild(opt);
+        }
+      }
+    }
+
+  </script>
+</body>
+</html>

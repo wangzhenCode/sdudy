@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!--如果要将script放到前面，则可以给script标签添加defer属性，该属性值与属性名相同
+    这时候浏览器会等所有的dom标签都执行完毕，在执行script
+  -->
+  <script src="./js/test.js" defer></script>
+  <div>hello</div>
+  <!--由dom默认是顺序执行的，所以只能将script标签放到后面-->
+  <!--<script src="./js/test.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    //用数组中的每一个元素和他后面的元素作比较，如果符合交换条件，则交换两个值得位置
+    var arr = [10,20,509,35,56,23,57,6,12,67];
+    //传统使用sort方法
+    /*var res = arr.sort(function (a,b) {
+      return a - b;
+    });
+    console.log(res);*/
+    //使用比较法排序(其实就是冒泡排序法)
+    for(var i = 0; i<arr.length; i++){
+      for(var j=i+1; j<arr.length; j++){
+        if(arr[i] > arr[j]){
+          var temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+        }
+      }
+    }
+    console.log(arr);
+</script>
+</body>
+</html>

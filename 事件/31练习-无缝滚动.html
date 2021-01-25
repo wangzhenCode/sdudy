@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    div{
+      border: 1px solid;
+      margin: 0 auto;
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+    }
+    #ul_box{
+      list-style: none;
+    }
+    li{
+      margin: 10px auto;
+    }
+    span{
+      margin: 10px 10px;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      margin-top: 10px;
+    }
+    a:hover{
+      color: red;
+      text-decoration: underline;
+    }
+    h2{
+      width: 150px;
+      margin: 10px auto;
+      padding-top: 100px;
+      color: #c42929;
+    }
+  </style>
+</head>
+<body>
+  <h2>国内最新消息</h2>
+  <div>
+    <ul id="ul_box">
+      <li><span>1.</span><a href="">专家分析河北藁城疫情：“农村病毒传播风险更大”</a></li>
+      <li><span>2.</span><a href="">新冠疫苗能保护多久?接种后可能有何不良反应?庞星火解答</a></li>
+      <li><span>3.</span><a href="">石家庄：在全员核酸检测中发现7例阳性样本</a></li>
+      <li><span>4.</span><a href="">邢台新冠病毒基因测序结果公布:与欧洲输入病毒高度同源</a></li>
+      <li><span>6.</span><a href="">新疆昌吉州呼图壁县报告1例输入性无症状感染者</a></li>
+      <li><span>7.</span><a href="">免费！1月7日起铁路部门配合疫情防控要求调整退票规定</a></li>
+      <li><span>8.</span><a href="">特朗普签署行政令封杀支付宝微信支付等 外交部回应</a></li>
+      <li><span>9.</span><a href="">美台突然要搞所谓政治军事对话 外交部、国台办相继表态</a></li>
+      <li><span>10.</span><a href="">蓬佩奥抹黑中欧协定，华春莹：听，有没有闻到一股酸味？</a></li>
+      <li><span>11.</span><a href="">辽宁省委副书记周波，已任辽宁省政协党组书记</a></li>
+    </ul>
+  </div>
+
+  <script>
+    //获取div容器
+    var div = document.querySelector("div");
+    var ul = document.querySelector("#ul_box");
+
+    //由于div框中的内容太少，滚动条无法发挥作用，所以将ul中的内容再复制一份
+    var content = ul.innerHTML;
+    ul.innerHTML = ul.innerHTML + content;
+
+    //用定时器调用
+    var timer = setInterval(content_move, 10);
+
+    //鼠标悬停上面后，停止滚动
+    ul.onmouseover = function () {
+      clearInterval(timer);
+    }
+
+    ul.onmouseout = function () {
+      timer = setInterval(content_move, 10);
+    }
+
+    //定义一个函数，让内容滚动
+    function content_move() {
+      if(div.scrollTop > ul.offsetHeight/2){
+        div.scrollTop = 0;
+      }else{
+        div.scrollTop++;
+      }
+
+    }
+
+  </script>
+</body>
+</html>

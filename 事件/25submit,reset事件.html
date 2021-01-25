@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form action="success.html">
+  用户名：<input type="text">
+  <input type="submit" value="提交">
+  <input type="reset" value="重置">
+</form>
+
+<script>
+  /*
+  * submit事件：当提交按钮点击时触发事件，注意该事件是给form添加，submit事件具有阻断数据提交的功能，
+  *             如果该事件触发时返回值为false，就会触发阻断，数据提交
+  * reset事件：当重置按钮点击时触发事件，注意该事件是给form表单添加。
+  *
+  * */
+  var form = document.querySelector('form');
+
+  form.onsubmit = function () {
+    alert("我被提交了！！")
+    return false;
+  }
+
+  form.onreset = function () {
+    alert("我被重置了！！");
+  }
+</script>
+</body>
+</html>

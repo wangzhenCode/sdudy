@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <input type="checkbox" name="happy">选项1
+  <input type="checkbox" name="happy">选项2
+  <input type="checkbox" name="happy">选项3
+  <input type="checkbox" name="happy">选项4
+  <input type="checkbox" name="happy">选项5
+  <hr>
+  <input type="radio" name="btn" onclick="inClick()">全选
+  <input type="radio" name="btn" onclick="unClick()">反选
+  <input type="radio" name="btn" onclick="noClick()">不选
+
+  <script>
+    var happys = document.getElementsByName("happy");
+    //全选
+    function inClick() {
+      for(var i=0;i<happys.length;i++){
+        happys[i].checked = true;
+      }
+    }
+
+    //不选
+    function noClick() {
+      for(var i=0;i<happys.length;i++){
+        happys[i].checked = false;
+      }
+    }
+
+    //反选
+    function unClick() {
+      for (var i= 0;i<happys.length;i++){
+        /*if(happys[i].checked){
+          happys[i].checked = false;
+        }else {
+          happys[i].checked = true;
+        }*/
+        happys[i].checked = !happys[i].checked;
+      }
+
+    }
+  </script>
+
+</body>
+</html>

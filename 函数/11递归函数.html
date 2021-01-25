@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 递归函数：递归函数是指在函数内部调用函数本身的函数
+    * function fn(){
+    *   fn();
+    * }
+    *
+    * 注意：使用递归时，一定要注意程序要有出口，也就是能退出循环的条件
+    * */
+
+    //利用递归函数求数据的前n项和
+    function fn(n){
+      if(n == 1){
+        return 1;
+      }else{
+        return fn(n-1) +n;
+      }
+    }
+    var res = fn(100);
+    console.log(res);
+
+    //利用递归函数求一个正整数的阶乘，5！= 1*2*3*4*5；
+    function fnx(n){
+      if(n ==1){
+        return 1;
+      }else{
+        return fnx(n-1)*n;
+      }
+    }
+    var res = fnx(10);
+    console.log(res);
+
+    //如果有一对兔子，从第三个月开始，每个月能生一对小兔子，小兔子长到三个月，每个月也能生一对小兔子，加入兔子都不死，问10个月后总共有
+    //多少对兔子（斐波那契数列）
+    function fnf(n){
+      if(n==1 || n==2){
+        return 1;
+      }else{
+        return fnf(n-1) + fnf(n-2);
+      }
+    }
+    var res = fnf(11);
+    console.log(res);
+
+
+    //使用递归函数时，推荐使用arguments的callee属性
+    function fnd(n){
+      if(n == 1){
+        return 1;
+      }else{
+        //return fnd(n-1) + n;
+        return arguments.callee(n-1) + n;//下面那样改了，把这里直接用arguments.callee属性，就可以避免类似操作发生，推荐使用
+      }
+    }
+    //接下来我这样操作
+    var foo = fnd;//因为这里相当于改了fnd函数的地址，将原始地址给了fnd的，所以可以使用
+    fnd = "哈哈，我啊fnd的地址给了我foo";//加上这句后，就相当与我给fnd赋新值了，函数调用时return fnd(n-1) + n时找不到函数了，会报错
+    var res = foo(10);
+    console.log(res);
+
+
+  </script>
+</body>
+</html>
