@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 冒泡排序,和java以前学过的一模一样
+    * */
+
+    var arr = [100,12,1,25,15,3,1,56,3,56,88,79];
+
+    for(var i=0; i<arr.length; i++){
+      for(var j=0; j<arr.length-i; j++){
+        if(arr[j] < arr[j+1]){i
+          var temp = arr[j];
+          arr[j] = arr[j+1];
+          arr[j+1] = temp;
+        }
+      }
+    }
+    console.log(arr);
+  </script>
+</body>
+</html>

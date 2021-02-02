@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    //将下列数组去重后输出
+    var arr = [1,5,2,1,4,6,1,3,6,5,4,5,2,];
+
+    var obj = {};
+    var newArr = [];
+
+    for(var i=0; i<arr.length; i++){
+      if(!obj[arr[i]]){ //判断空对象中有没有数组中的元素
+        newArr.push(arr[i]);
+        obj[arr[i]] = 888;//给key赋一个value，值可以是任意，但是必须得赋值
+      }
+    }
+    console.log(newArr);
+  </script>
+</body>
+</html>

@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="064bc6ba-88a8-4c16-9140-4ecd6920d484" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/swiper/css/swiper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/html/0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/html/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/html/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/html/3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/html/4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/html/5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/html/6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/html/7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/js/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/swiper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/正则表达式/13.冒泡排序.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/起步/数组的二分查找.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/起步/数组的快速排序法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermall" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,63 +33,82 @@
     <session id="204362479">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="26" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
-          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.25" value="2" />
-          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.53" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="181" />
-          <entry key="js" value="6" />
-          <entry key="ts" value="8" />
+          <entry key="css" value="3" />
+          <entry key="html" value="224" />
+          <entry key="jpg" value="15" />
+          <entry key="js" value="9" />
+          <entry key="ts" value="15" />
           <entry key="vue" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="181" />
-          <entry key="JavaScript" value="6" />
-          <entry key="TypeScript" value="8" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="224" />
+          <entry key="Image" value="15" />
+          <entry key="JavaScript" value="9" />
+          <entry key="TypeScript" value="15" />
           <entry key="Vue.js" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="29297" />
-          <entry key="js" value="72" />
+          <entry key="css" value="458" />
+          <entry key="html" value="35709" />
+          <entry key="js" value="1687" />
           <entry key="vue" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="29297" />
-          <entry key="JavaScript" value="72" />
+          <entry key="CSS" value="458" />
+          <entry key="HTML" value="35709" />
+          <entry key="JavaScript" value="1687" />
           <entry key="Vue.js" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/起步/数组的二分查找.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Vue Single File Component" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -83,45 +118,15 @@
       <find>red</find>
       <find>addEventListener</find>
       <find>兰州</find>
+      <find>indexof</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/supermall" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/事件/17随机点名案例.html" />
-        <option value="$PROJECT_DIR$/事件/4案例鼠标拖动.html" />
-        <option value="$PROJECT_DIR$/事件/18移动的小球.html" />
-        <option value="$PROJECT_DIR$/事件/20菜单显示案例.html" />
-        <option value="$PROJECT_DIR$/事件/6IE浏览器低版本添加与删除事件.html" />
-        <option value="$PROJECT_DIR$/事件/鼠标事件.html" />
-        <option value="$PROJECT_DIR$/事件/21鼠标事件.html" />
-        <option value="$PROJECT_DIR$/事件/事件冒泡.html" />
-        <option value="$PROJECT_DIR$/事件/22事件冒泡.html" />
-        <option value="$PROJECT_DIR$/事件/focus事件和blur事件.htnk.html" />
-        <option value="$PROJECT_DIR$/事件/24inout，change事件.html" />
-        <option value="$PROJECT_DIR$/事件/submit,reset事件.html" />
-        <option value="$PROJECT_DIR$/事件/success.html" />
-        <option value="$PROJECT_DIR$/事件/25submit,reset事件.html" />
-        <option value="$PROJECT_DIR$/事件/keydown,keypress,keyup事件.html" />
-        <option value="$PROJECT_DIR$/事件/event对象的scroll事件.html" />
-        <option value="$PROJECT_DIR$/事件/touchstart,touchmove,touchend移动端事件.html" />
-        <option value="$PROJECT_DIR$/事件/29练习表单验证.html" />
-        <option value="$PROJECT_DIR$/事件/28touchstart,touchmove,touchend移动端事件.html" />
-        <option value="$PROJECT_DIR$/事件/13事件对象的currentTarget和target属性.html" />
-        <option value="$PROJECT_DIR$/事件/30淡入式广告.html" />
-        <option value="$PROJECT_DIR$/事件/31练习-无缝滚动.html" />
-        <option value="$PROJECT_DIR$/事件/32移动端元素移动.html" />
-        <option value="$PROJECT_DIR$/事件/33window对象的bubbles属性.html" />
-        <option value="$PROJECT_DIR$/事件/window对象/window对象的eventPhase属性.html" />
-        <option value="$PROJECT_DIR$/事件/window对象/事件对象的button属性.html" />
-        <option value="$PROJECT_DIR$/事件/window对象/鼠标滚轮事件.html" />
-        <option value="$PROJECT_DIR$/事件/window对象/4鼠标滚轮事件.html" />
-        <option value="$PROJECT_DIR$/事件/window对象/5事件对象的load事件.html" />
-        <option value="$PROJECT_DIR$/事件/window对象/5window对象的load事件.html" />
-        <option value="$PROJECT_DIR$/事件/window对象/文档的DomContentLoad事件.html" />
         <option value="$PROJECT_DIR$/事件/window对象/7事件委托（重点）.html" />
         <option value="$PROJECT_DIR$/事件/window对象/8window对象的常用方法和open,close.html" />
         <option value="$PROJECT_DIR$/事件/window对象/9newWindow的name属性.html" />
@@ -142,6 +147,37 @@
         <option value="$PROJECT_DIR$/supermall/src/App.vue" />
         <option value="$PROJECT_DIR$/supermall/src/main.js" />
         <option value="$PROJECT_DIR$/supermall/src/component/common/common.vue" />
+        <option value="$PROJECT_DIR$/正则表达式/1.正则表达式的简介.html" />
+        <option value="$PROJECT_DIR$/正则表达式/3.正则表达式的split方法.html" />
+        <option value="$PROJECT_DIR$/正则表达式/正则表达式与字符串匹配的mach方法.html" />
+        <option value="$PROJECT_DIR$/正则表达式/5.正则表达式与字符串匹配的replace方法.html" />
+        <option value="$PROJECT_DIR$/正则表达式/6.正则表达式与字符匹配的search方法.html" />
+        <option value="$PROJECT_DIR$/正则表达式/7.正则表达式的修饰符.html" />
+        <option value="$PROJECT_DIR$/正则表达式/2.正则表达式的构成.html" />
+        <option value="$PROJECT_DIR$/正则表达式/8.正则表达式对象的exec方法.html" />
+        <option value="$PROJECT_DIR$/正则表达式/正则表达式的模式（贪婪/懒惰）.html" />
+        <option value="$PROJECT_DIR$/正则表达式/9正则表达式的模式（贪婪/懒惰）.html" />
+        <option value="$PROJECT_DIR$/正则表达式/9.正则表达式的加载模式（贪婪/懒惰）.html" />
+        <option value="$PROJECT_DIR$/正则表达式/10.利用splice方法去重.html" />
+        <option value="$PROJECT_DIR$/正则表达式/11.利用hash表给数组去重.html" />
+        <option value="$PROJECT_DIR$/正则表达式/12.利用indexOf方法给数组去重.html" />
+        <option value="$PROJECT_DIR$/正则表达式/冒泡排序.html" />
+        <option value="$PROJECT_DIR$/正则表达式/13.冒泡排序.html" />
+        <option value="$PROJECT_DIR$/swiper/html.html" />
+        <option value="$PROJECT_DIR$/swiper/html/index.html" />
+        <option value="$PROJECT_DIR$/swiper/html/0.html" />
+        <option value="$PROJECT_DIR$/swiper/html/1.html" />
+        <option value="$PROJECT_DIR$/swiper/html/2.html" />
+        <option value="$PROJECT_DIR$/swiper/html/4.html" />
+        <option value="$PROJECT_DIR$/swiper/html/5.html" />
+        <option value="$PROJECT_DIR$/swiper/html/6.html" />
+        <option value="$PROJECT_DIR$/swiper/html/7.html" />
+        <option value="$PROJECT_DIR$/swiper/js/constant.js" />
+        <option value="$PROJECT_DIR$/swiper/swiper.html" />
+        <option value="$PROJECT_DIR$/swiper/css/swiper.css" />
+        <option value="$PROJECT_DIR$/swiper/js/swiper.js" />
+        <option value="$PROJECT_DIR$/起步/数组的快速排序法.html" />
+        <option value="$PROJECT_DIR$/起步/数组的二分查找.html" />
       </list>
     </option>
   </component>
@@ -157,24 +193,22 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/supermall/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
   <component name="ProjectId" id="1m98SfcLrMeWJ3zhh6OV9tprIWE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,11 +216,15 @@
               <item name="studyJs" type="b2602c69:ProjectViewProjectNode" />
               <item name="studyJs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="studyJs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studyJs" type="462c0819:PsiDirectoryNode" />
+              <item name="起步" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -204,7 +242,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\vue\myStore\studyJs\swiper\html" />
+      <recent name="D:\vue\myStore\studyJs\swiper\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\vue\myStore\studyJs\swiper" />
+      <recent name="D:\vue\myStore\studyJs\正则表达式" />
       <recent name="D:\vue\myStore\studyJs\事件\window对象" />
       <recent name="D:\vue\myStore\studyJs\起步" />
     </key>
@@ -269,12 +313,17 @@
       <workItem from="1611055390944" duration="4936000" />
       <workItem from="1611139729663" duration="1370000" />
       <workItem from="1611571631923" duration="683000" />
-      <workItem from="1611572406008" duration="4799000" />
+      <workItem from="1611572406008" duration="9511000" />
+      <workItem from="1611660192038" duration="7555000" />
+      <workItem from="1611750464823" duration="9769000" />
+      <workItem from="1611836633513" duration="7006000" />
+      <workItem from="1611922566281" duration="8041000" />
+      <workItem from="1612180181944" duration="9191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119381000" />
+    <option name="totallyTimeSpent" value="165655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -286,9 +335,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="68" y="20" width="1400" height="776" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990099" visible="true" weight="0.28269485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990099" visible="true" weight="0.093108505" />
       <window_info id="Structure" order="1" sideWeight="0.5009901" side_tool="true" weight="0.18229854" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,8 +349,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4993395" visible="true" weight="0.52056736" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006605" side_tool="true" weight="0.55886525" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4993395" weight="0.27801418" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006605" side_tool="true" weight="0.3148936" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -343,335 +392,6 @@
     <state x="276" y="59" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608897099097" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/事件/22事件冒泡.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/21鼠标事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/24inout，change事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/23focus事件和blur事件.htnk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/25submit,reset事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/26keydown,keypress,keyup事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/2.DOM0级事件添加及删除.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/1时间的添加.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/3HTML事件中特殊事件的处理.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/29练习表单验证.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/27event对象的scroll事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/document/18内部样式和外部样式的操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/12事件对象的screen,client,offset,page属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/13事件对象的currentTarget和target属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/14事件对象的方法preventDefault.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/document/20dom常用方法2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/document/21dom常用方法3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/document/27dom常用属性2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="52" column="94" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/document/26dom常用属性1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/30淡入式广告.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/8小案例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/18移动的小球.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/28touchstart,touchmove,touchend移动端事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/19案例鼠标拖动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/1window对象的bubbles属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/2window对象的eventPhase属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/3事件对象的button属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/5文档的load和error事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/4鼠标滚轮事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/31练习-无缝滚动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1176">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/32移动端元素移动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/6文档的DomContentLoad事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/8window对象的常用方法和open,close.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/7事件委托（重点）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/9newWindow的name属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/window对象的name属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/10三级联通下拉列表.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="104" column="26" lean-forward="true" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/11window的screenX和screeY属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/js/test1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/js/test2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/js/test3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/12dom文件的执行顺序.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/14dom文件的执行属性asyhc属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/13dom文件的执行顺序defer属性.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/事件/window对象/15documentFragment的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/事件/window对象/16call和apply方法.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -679,27 +399,251 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supermall/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/supermall/src/App.vue" />
+    <entry file="file://$PROJECT_DIR$/supermall/src/main.js" />
+    <entry file="file://$PROJECT_DIR$/supermall/src/component/common/common.vue" />
+    <entry file="file://$PROJECT_DIR$/事件/购物车案例.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="-21">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supermall/src/main.js">
+    <entry file="file://$PROJECT_DIR$/事件/22事件冒泡.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-843" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/1.正则表达式的简介.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supermall/src/component/common/common.vue">
+    <entry file="file://$PROJECT_DIR$/正则表达式/3.正则表达式的split方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/4.正则表达式与字符串匹配的mach方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/6.正则表达式与字符匹配的search方法.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/7.正则表达式的修饰符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/5.正则表达式与字符串匹配的replace方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/2.正则表达式的构成.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/8.正则表达式对象的exec方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/9正则表达式的模式（贪婪/懒惰）.html" />
+    <entry file="file://$PROJECT_DIR$/正则表达式/9.正则表达式的加载模式（贪婪和懒惰）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="1213" column="4" selection-start-line="1213" selection-start-column="4" selection-end-line="1213" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es2015.collection.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/起步/js练习与数组.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="302" column="26" selection-start-line="302" selection-start-column="26" selection-end-line="302" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/11.利用hash表给数组去重.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/10.利用splice方法去重.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/12.利用indexOf方法给数组去重.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正则表达式/13.冒泡排序.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/img/5540e020-78e8-4f24-a105-029b88ed8b87.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/20dbe12b-c97c-4556-ac76-bce1d6457a6a.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/2f596e37-7ec4-4a97-94fe-e82698ad9d4b.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/4c4ff924-15c5-4340-a3d6-fa429248beb4.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/5a0f5911-eec0-46d1-9b3c-af70f42b373f.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/8c1cc17c-5eb1-45eb-8ef7-ae369fff43ad.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/18cf928b-2c7e-4964-a002-92b8f905b738.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/70e9d713-29ca-4fd4-80c3-415a70b53b4e.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/97e3c01d-07f7-4141-ac37-5fc418186811.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/fef10abb-f4b5-4b44-aa56-ed29b8de1956.jpg" />
+    <entry file="file://$PROJECT_DIR$/swiper/html.html" />
+    <entry file="file://$PROJECT_DIR$/swiper/html/0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/html/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/html/2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/html/3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/html/4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/html/5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/html/6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/html/7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.webworker.importscripts.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/js/constant.js" />
+    <entry file="file://$PROJECT_DIR$/swiper/img/5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="17105" column="17" selection-start-line="17105" selection-start-column="17" selection-end-line="17105" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/swiper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/css/swiper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper/js/swiper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="51" column="46" lean-forward="true" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/起步/数组的快速排序法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/起步/数组的二分查找.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
         </state>
       </provider>
     </entry>

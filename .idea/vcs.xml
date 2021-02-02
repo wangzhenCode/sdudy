@@ -5,5 +5,6 @@
     <mapping directory="$PROJECT_DIR$/document" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/supermall" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/supermall/supermall" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/正则表达式" vcs="Git" />
   </component>
 </project>

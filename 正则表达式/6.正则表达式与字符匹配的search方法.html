@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * search方法：查找字符串中的字串位置，类似于indexOf方法，但是indexOf不能和正则匹配使用
+    * 格式：字符串对象.search("字串")；
+    * 注意：此方法只能查找第一个字串位置
+    * */
+
+    var str = "helloworld"
+
+    var reg = /l/g //这里虽然是全局查找，但是search方法仍然返回第一个字串位置
+    // console.log(str.search("l"));
+    console.log(str.search(reg));
+  </script>
+</body>
+</html>

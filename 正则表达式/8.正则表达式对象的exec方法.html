@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * exec方法：该方法是正则表达式对象的我一个方法，该方法表示匹配字符串中检索与正则表达式相匹配的字串，如果检索到了
+    *           则会将其以数组形式返回，否则返回null
+    * 格式：正则表达式.exec("字串");
+    *
+    * 注意：此方法调用时会有一个隐形的指针，所以每次调用都会接在指针后面，所以通常将该方法用在循环中
+    * */
+
+    var reg = /a/g;
+
+    var str = "abcabcabc";
+
+    var res = reg.exec(str);
+    console.log(res);
+    var res = reg.exec(str);
+    console.log(res);
+    var res = reg.exec(str);
+    console.log(res);
+    var res = reg.exec(str);
+    console.log(res);
+    var res = reg.exec(str);
+    console.log(res);
+  </script>
+</body>
+</html>

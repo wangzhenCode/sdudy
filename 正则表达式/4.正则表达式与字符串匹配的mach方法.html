@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * match方法查找字符串中符合字串的所有字串，返回字串数组
+  * 格式：字符串.match("字串"/正则)；
+  * 返回值：字串的数组
+  * */
+
+  var str = 'helloworld';
+  var res = str.match('l');//字符串默认只找第一个
+  var res2 = str.match(/l/);//正则也是默认只找第一个
+  var res3 = str.match(/l/g);//g是正则表达式修饰符，表示全局查找
+  console.log(res);
+  console.log(res2);
+  console.log(res3);
+</script>
+</body>
+</html>

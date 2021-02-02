@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * replace方法：替换字符串中指定的内容
+    * 格式：字符串.replace("要被替换的字符", "新的字符");
+    * */
+
+    var str = 'he1l3l4o5wo3r6ld';
+    var reg = /\d/g;//正则加上修饰符g后才表示全局替换
+    //console.log(str.replace("l", "a"));//默认只替换第一个
+    console.log(str.replace(reg, "l"));
+
+  </script>
+</body>
+</html>

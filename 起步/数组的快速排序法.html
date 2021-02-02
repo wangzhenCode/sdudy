@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <script>
+    //将下列数组利用快速排序法进行排序
+    var arr = [45, 56, 89,6, 55,1, 14, 55, 5, 26,142, 5, 15];
+
+
+    //定义一个函数，将上述数组排序
+    function quickSort(myArr) {
+      //判断数组是否为空或只有一个元素
+      if(myArr.length <= 1){
+        return myArr;
+      }
+
+      //如果数组的元素大于1，则先拿到数组的中间元素或者任何一个元素
+      var mid = myArr.splice(Math.floor(myArr.length / 2), 1);
+      //定义空数组
+      var left = [];
+      var right = [];
+      //遍历数组，将大于中间值的部分放到左边，小于中间值的部分的放到右边
+      for(var i=0; i<myArr.length; i++){
+        if(myArr[i] < mid){
+          left.push(myArr[i]);
+        } else {
+          right.push(myArr[i]);
+        }
+      }
+
+      return quickSort(left).concat(mid, quickSort(right));
+    }
+
+    var res = quickSort(arr);
+    console.log(res)
+  </script>
+
+</body>
+</html>
