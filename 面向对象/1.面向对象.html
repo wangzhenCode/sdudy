@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    * 面向过程：简单的说完成某个需求时，分析该需求要经过那些过程，例如C语言典型的面向过程
+    * 面向对象：简单的谁完成某个需求时，分析该需求要用到那些对象，属性，方法等，例如java，C++等
+    *
+    * 注意：构造方法调用时，要用到new关键字
+    * */
+
+    //利用构造方法创建对象
+    function Student(name, age, gender, address) {
+      //定义属性
+      this.name = name;
+      this.age = age;
+      this.gender = gender;
+      this.address = address;
+
+      //定义功能
+      this.sdudy = function () {
+        console.log("学习");
+      };
+      this.play = function () {
+        console.log("玩游戏");
+      };
+    }
+
+    var obj = new Student("Tom", 29, "男", "北京");
+    var obj2 = new Student("Luly", 12, "女", "纽约");
+    console.log(obj);
+    console.log(obj2);
+  </script>
+</body>
+</html>

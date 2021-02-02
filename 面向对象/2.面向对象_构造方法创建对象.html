@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    * 创建一个矩形对象，属性有长和宽，功能有周长和面积
+    * */
+
+    function Rect(width, height) {
+      //定义属性
+      this.width = width;
+      this.height = height;//这里的this指的时对象的属性名
+
+      //定义功能
+      this.l = function () {
+        return width*2 + height*2;//这里的this指代谁调用就指代谁
+      }
+      this.s = function () {
+        return width*height;
+      }
+    }
+
+    var rect = new Rect(10, 30);
+    console.log(rect);
+    console.log(rect.l());
+    console.log(rect.s());
+    
+    
+    /*
+    * 创建冰箱对象
+    * */
+    
+    function Refrirater(price, brand) {
+      this.price = price;
+      this.brand = brand;
+      
+      this.baoxian = function () {
+        console.log('很保险');
+      }
+    }
+
+    var reg = new Refrirater(100, 2000);
+    console.log(reg);
+  </script>
+</body>
+</html>
