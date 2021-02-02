@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    * JSON对象的parse()方法和stringify方法：
+    * parse方法：
+    *   1.作用：将JSON字符串转换为JS对象
+    *   2.格式window.JSON.parse(JSON字符串)
+    *   3.返回值为转化后的对象
+    *
+    * stringify方法：
+    *   1.作用：将JS对象转化为JSON字符串
+    *   2.格式为window.JSON.stringify(JS对象)
+    *   3.返回值为转化后的JSON字符串
+    *
+    * 注意：window可以省略
+    * */
+
+    var data = '{"name": "Tom", "age": 28, "gender": "男"}';
+
+    //将data转化成js对象
+    var obj = JSON.parse(data);
+    console.log(obj);
+
+    //将obj对象转换为JOSN
+    var data2 = JSON.stringify(obj);
+    console.log(data2);
+  </script>
+</body>
+</html>

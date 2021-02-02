@@ -1,0 +1,17 @@
+{
+  "name": "Tom",
+  "age": 29,
+  "gender": "男",
+
+  "brothor": [
+    {
+      "name": "Lily",
+      "age": 23
+    },
+    {
+      "name": "Lucy",
+      "age": 30
+    }
+  ],
+  "happy": ["游泳", "羽毛球"]
+}
