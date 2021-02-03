@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 所谓静态属性和静态方法就是构造函数直接绑定的属性和方法，也不属于构造方法
+    * */
+
+    function Person(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    //静态方法
+    Person.fn = function () {
+      console.log('Tom');
+    }
+    //静态属性
+    Person.gender = "12";
+
+    var p = new Person("Lily", 23);
+    console.log(p.name);
+    console.log(p.age);
+    console.log(p.gender);//调用不到
+    p.fn();//调用不到
+
+  </script>
+</body>
+</html>

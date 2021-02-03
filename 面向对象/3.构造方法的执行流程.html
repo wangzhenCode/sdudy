@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    function Person(Name, age, gender, address) {
+      this.Name = Name;
+      this.age = age;
+      this.gender = gender;
+      this.address = address;
+
+      this.speak = function () {
+        console.log('hello');
+      };
+
+    };
+
+    var p1 = new Person("Tom", 36, "男", "天津");
+    var p1 = new Person("Lucy", 28, "女", "北京");
+
+    /*
+    * 构造方法执行流程：
+    * 1.如果有形参，那么调用时先创建一个空对象，并且让this指向空对象，与此同时将实参的值赋给形参
+    * 2.进入构造方法里面，做条执行构造方法里面的代码，绑定属性并对其初始化赋值
+    * 3.执行完构造方法，将创建的这个空对象绑定给接收者，同时this重新只想window对象，里面的属性和方法都销毁
+    * */
+  </script>
+</body>
+</html>
