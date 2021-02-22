@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * instanceof 是判断某个对象的类型是否属于要判断的类型
+    * 格式：变量 instanceof 类型
+    * 返回值：如果判断的变量属于引用类型返回true，否则返回false
+    *
+    * */
+
+    function Student(name, age, gender) {
+      this.name = name;
+      this.age = age;
+      this.gender = gender;
+    }
+
+    var s = new Student("Tom", 10, "男");
+    console.log(s instanceof Student);
+
+    function Person(name, age, subject) {
+      this.name = name;
+      this.age = age;
+      this.subject = subject;
+    }
+
+    var p = new Person("Lusc", 12, "女");
+    console.log(p instanceof Student);
+  </script>
+</body>
+</html>

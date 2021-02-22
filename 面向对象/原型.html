@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * prototype原型对象
+    * 1.什么是原型：每个对象都有一个proptotype属性，这个属性指向了一个对象，这个对象就是原型对象，简称原型；
+    * 原型中存储的是通过构造方法创建出来的所有对象可以共享的内容，可以使用构造方法名称.prototype属性来获取原型对象
+    *
+    * 原型对象的操作(增删改查)
+    *
+    * */
+
+    function Student(name, age, gender) {
+      this.name = name;
+      this.age = age;
+      this.gender = gender;
+    }
+    
+    Student.prototype.speak = function (){
+      console.log('hello');
+    }
+
+    //增
+    Student.prototype.native = "USA";
+    Student.prototype["hairColor"] = "black";
+
+    console.log(Student.prototype);
+
+    //原型对象的改
+    Student.prototype.native = "中国";
+    Student.prototype.hairColor = "yellow";
+
+    //删
+    delete Student.prototype.native;
+
+    //查
+    console.log(Student.prototype.hairColor);
+
+
+    //简单查询
+    var s = new Student("Tom", 23, "女");
+    console.log(s.hairColor);
+
+  </script>
+</body>
+</html>
