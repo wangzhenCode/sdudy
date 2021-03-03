@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <script>
+
+    function Person (name, age, gender, native){
+
+      this.name = name;
+      this.age = age;
+      this.gender = gender;
+      this.native = native;
+
+    }
+
+    Person.prototype.speak = function () {
+      console.log('hello');
+    }
+
+    Person.prototype.native = '美国';
+
+    var p = new Person('Tom', 23, '男', '中国');
+
+    p.speak();
+    console.log(p.native);
+    /*
+    * 为什么对象可以直接获取原型中的内容，是因为，每个对象的都有一个属性__proto__，这个属性就指向了这个创建对象的原型对象。
+    * 当利用某个对象去查找某个属性时，属性的查找顺序是，先从自身的私有属性开始查找，如果私有属性中含有查找的属性，则返回该
+    * 属性的值；如果私有属性中没有该查找属性，则沿着__proto__的指向，到原型属性中查找，如果有则返回值；如果私有属性中的属性
+    * 和原型中的属性相同，则利用对象查找属性时，私有属性会将原型属性屏蔽掉。
+    *
+    * */
+
+    console.log(Person.prototype == p.__proto__);
+  </script>
+</body>
+</html>
