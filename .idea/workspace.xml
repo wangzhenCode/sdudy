@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="064bc6ba-88a8-4c16-9140-4ecd6920d484" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/正则表达式/13.冒泡排序.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/面向对象/闭包.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -104,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/面向对象/闭包.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="36">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -335,12 +332,12 @@
       <workItem from="1614000122815" duration="5722000" />
       <workItem from="1614598071368" duration="1539000" />
       <workItem from="1614774007574" duration="2916000" />
-      <workItem from="1617201476097" duration="1186000" />
+      <workItem from="1617201476097" duration="1568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190809000" />
+    <option name="totallyTimeSpent" value="191191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,9 +350,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990099" visible="true" weight="0.14332893" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990099" visible="true" weight="0.14332893" />
       <window_info id="Structure" order="1" sideWeight="0.5009901" side_tool="true" weight="0.18229854" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,7 +363,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4993395" visible="true" weight="0.28936172" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4993395" visible="true" weight="0.77588654" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006605" side_tool="true" weight="0.3148936" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -680,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/面向对象/闭包.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="36">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
