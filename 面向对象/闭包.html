@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+  /*
+  * 闭包：1.广义：被定义在其他函数内部的函数就是一个闭包
+  *      2.侠义：外部函数返回的持有外部函数变量的内部函数，就是一个闭包
+  *
+  * */
+  
+  //广义上的闭包
+  function outer() {
+
+    function inner() {//inner就是一个闭包
+      console.log('hello');
+    };
+    
+  }
+
+  //狭义上的闭包
+  function outer() {
+
+    return function inner() {
+
+      console.log("hello");
+    };
+  }
+
+  var res = outer();
+  console.log(res); //打印的是inner函数，因为闭包返回的就是一个函数
+
+  res();
+
+</script>
+</body>
+</html>
