@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="064bc6ba-88a8-4c16-9140-4ecd6920d484" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/正则表达式/13.冒泡排序.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/11.构造方法继承.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/12.构造方法中的原型对象不能直接继承.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/13.构造方法继承的原型链式继承.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/14.构造方法继承的组合式继承.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/15.工厂模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/面向对象/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/面向对象/10.闭包.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +24,7 @@
     <session id="204362479">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
+          <entry key="project.closed" value="35" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
@@ -28,7 +35,7 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.22" value="4" />
-          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.23" value="3" />
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.25" value="3" />
           <entry key="project.open.time.26" value="1" />
@@ -38,13 +45,13 @@
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
-          <entry key="html" value="246" />
+          <entry key="html" value="254" />
           <entry key="jpg" value="15" />
           <entry key="js" value="9" />
           <entry key="json" value="1" />
@@ -56,7 +63,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="246" />
+          <entry key="HTML" value="254" />
           <entry key="Image" value="15" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="9" />
@@ -68,7 +75,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="458" />
-          <entry key="html" value="41020" />
+          <entry key="html" value="43551" />
           <entry key="js" value="1687" />
           <entry key="json" value="203" />
           <entry key="md" value="73" />
@@ -78,7 +85,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="458" />
-          <entry key="HTML" value="41020" />
+          <entry key="HTML" value="43551" />
           <entry key="JSON" value="203" />
           <entry key="JavaScript" value="1687" />
           <entry key="PLAIN_TEXT" value="73" />
@@ -88,21 +95,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/面向对象/9.为什么可以直接使用对象获取原型中的内容.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/面向对象/闭包.html">
+        <entry file="file://$PROJECT_DIR$/面向对象/15.工厂模式.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="403">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -132,11 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/事件/window对象/14dom文件的执行属性asyhc属性.html" />
-        <option value="$PROJECT_DIR$/事件/window对象/15documentFragment的使用.html" />
-        <option value="$PROJECT_DIR$/事件/window对象/16call和apply方法.html" />
-        <option value="$PROJECT_DIR$/supermall/src/App.vue" />
-        <option value="$PROJECT_DIR$/supermall/src/main.js" />
         <option value="$PROJECT_DIR$/supermall/src/component/common/common.vue" />
         <option value="$PROJECT_DIR$/正则表达式/1.正则表达式的简介.html" />
         <option value="$PROJECT_DIR$/正则表达式/3.正则表达式的split方法.html" />
@@ -183,6 +176,11 @@
         <option value="$PROJECT_DIR$/面向对象/9.为什么可以直接使用对象获取原型中的内容.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/面向对象/闭包.html" />
+        <option value="$PROJECT_DIR$/面向对象/12.构造方法中的原型对象不能直接继承.html" />
+        <option value="$PROJECT_DIR$/面向对象/11.构造方法继承.html" />
+        <option value="$PROJECT_DIR$/面向对象/13.构造方法继承原型属性的调取.html" />
+        <option value="$PROJECT_DIR$/面向对象/14.构造方法继承的组合式继承.html" />
+        <option value="$PROJECT_DIR$/面向对象/15.工厂模式.html" />
       </list>
     </option>
   </component>
@@ -213,6 +211,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,7 +228,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -332,12 +330,13 @@
       <workItem from="1614000122815" duration="5722000" />
       <workItem from="1614598071368" duration="1539000" />
       <workItem from="1614774007574" duration="2916000" />
-      <workItem from="1617201476097" duration="1568000" />
+      <workItem from="1617201476097" duration="2553000" />
+      <workItem from="1617709011614" duration="6620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191191000" />
+    <option name="totallyTimeSpent" value="198796000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,8 +349,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990099" visible="true" weight="0.14332893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990099" visible="true" weight="0.14332893" />
       <window_info id="Structure" order="1" sideWeight="0.5009901" side_tool="true" weight="0.18229854" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -363,7 +363,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4993395" visible="true" weight="0.77588654" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4993395" weight="0.27053824" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006605" side_tool="true" weight="0.3148936" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -406,35 +406,6 @@
     <state x="276" y="59" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608897099097" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/正则表达式/9正则表达式的模式（贪婪/懒惰）.html" />
-    <entry file="file://$PROJECT_DIR$/正则表达式/9.正则表达式的加载模式（贪婪和懒惰）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="1213" column="4" selection-start-line="1213" selection-start-column="4" selection-end-line="1213" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es2015.collection.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/起步/js练习与数组.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="302" column="26" selection-start-line="302" selection-start-column="26" selection-end-line="302" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/正则表达式/11.利用hash表给数组去重.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -667,17 +638,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象/9.为什么可以直接使用对象获取原型中的内容.html">
+    <entry file="file://$PROJECT_DIR$/面向对象/10.闭包.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="630">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象/闭包.html">
+    <entry file="file://$PROJECT_DIR$/面向对象/9.为什么可以直接使用对象获取原型中的内容.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="445">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/面向对象/11.构造方法继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/面向对象/12.构造方法中的原型对象不能直接继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/面向对象/13.构造方法继承的原型链式继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/面向对象/14.构造方法继承的组合式继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/面向对象/15.工厂模式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 原型属性在继承中的调取
+    *
+    * function 上级构造方法(){
+    *
+    *   上级构造方法.proptype.属性名 = 属性值；
+    *
+    * }
+    * function 下级构造方法(){
+    *   下级构造方法.属性名 = new 上级构造方法();
+    * }
+    *
+    *
+    *
+    *
+    * */
+
+
+    function Person(name) {
+      this.name = name;
+    }
+    Person.prototype.speak = function () {
+      console.log('Hello');
+    }
+
+    Person.prototype.native = "中国";
+
+    function Student(name, subject) {
+      Person.call(this, name);//继承上级属性
+      this.subject = subject;
+    }
+
+
+    Student.prototype = new Person();//有点像java中的向上造型，这中继承采用了原型链式继承
+    var s = new Student("Tom","语文");
+    console.log(s);
+     s.speak();
+     console.log(s.native);
+
+
+
+  </script>
+</body>
+</html>

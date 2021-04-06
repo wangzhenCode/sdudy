@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    function Person(name, age, gender) {
+      this.name = name;
+      this.age = age;
+      this. gender = gender;
+    };
+
+    Person.prototype.speak = function () {
+      console.log('Hello');
+    }
+
+    function Student(name, age, gender, subject, teacher, school) {
+      //使用继承替换重复的代码
+
+      // this.name = name;
+      // this.age = age;
+      // this.gender = gender;
+
+      // Person.call(this, name, age, gender);
+      Person.apply(this, [name, age, gender]);
+      this.subject = subject;
+      this.teacher = teacher;
+      this.school = school;
+    }
+
+    var s = new Student("Tom", 10, "男", "数学", "Mr Li", "长郡中学");
+    console.log(s);
+    s.speak();//不能调取上一级的原型属性
+  </script>
+</body>
+</html>

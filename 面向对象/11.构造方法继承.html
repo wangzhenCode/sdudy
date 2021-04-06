@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  /*
+  * 继承的格式：
+  *
+  *   function 构造方法1 () {};
+  *   function 构造方法2 (){
+  *     构造方法1.call/apply(this, 实参1, 实参2, 实参3);
+  *     this.属性名1 = 属性值1；
+  *     this.属性名2 = 属性值2；
+  *     this.属性名3 = 属性值3；
+  *
+  *   }
+  *
+  * */
+
+  function Person(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this. gender = gender;
+  };
+
+  function Student(name, age, gender,subject, teacher, school) {
+    //使用继承替换重复的代码
+
+    // this.name = name;
+    // this.age = age;
+    // this.gender = gender;
+
+    // Person.call(this, name, age, gender);
+    Person.apply(this, [name, age, gender]);
+    this.subject = subject;
+    this.teacher = teacher;
+    this.school = school;
+  }
+
+  var s = new Student("Tom", 10, "男", "数学", "Mr Li", "长郡中学");
+  console.log(s);
+
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  /*
+  * 组合继承：私有方法的绑定属性继承以及原型链的继承组合
+  * */
+
+  function Person(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  };
+
+  Person.prototype.speak = function () {
+    console.log('Hello');
+  }
+
+  Person.prototype.native = "中国";
+  function Student(name, age, gender, subject, teacher, school) {
+    Person.call(this, name, age, gender);//属性继承
+    this.subject = subject;
+    this.teacher = teacher;
+    this.school = school;
+  }
+
+  Student.prototype = new Person();//链式继承向上造型
+  Student.prototype.constructor = Student;//链式继承
+  var s = new Student("wangzhen", 30, "男", "语文", "Mir", "砂子塘小学");
+  console.log(s);
+  console.log(s.native);
+  s.speak();
+
+
+</script>
+</body>
+</html>

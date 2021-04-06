@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    /*
+    * 工厂模式：式js中的一种设计模式，利用工厂模式可以批量的创建js对象，其本质就是js函数
+    * 工厂模式格式：
+    * function 函数名称(形参1, 形参2, 形参3, ...){
+    *   var 对象名称 = {};
+    *
+    *   对象名称.属性名称1 = 形参1;
+    *   对象名称.属性名称2 = 形参2;
+    *   对象名称.属性名称3 = 形参3;
+    *          ...
+    *   对象名称.函数名 = function (){};
+    *
+    *   return 对象名称;
+    * }
+    *
+    * */
+
+    function Person(name, age, gender) {
+
+      var stu = {};
+      stu.name = name;
+      stu.age = age;
+      stu.gender = gender;
+
+      stu.speak = function () {
+        console.log('Hello');
+      };
+
+      return stu;
+    }
+
+    var s1 = Person("Tom", 10, "男");
+    var s2 = Person("Tom", 12, "男");
+
+    console.log(s1);
+    console.log(s2);
+  </script>
+</body>
+</html>
