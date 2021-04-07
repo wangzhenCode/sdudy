@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!--
+      ready事件的执行要早与load事件的执行
+      区别：
+        1.ready事件是jquery的事件，load事件是原生的JS事件
+        2.ready事件执行时等dom树加载完成后就开始执行，而load事件等html中所有的节点都执行完毕后才执行，例如等文件中的图片加载完成
+        3.ready如果有多个，后面的不会覆盖前面的，但是load事件有多个时，后面的会覆盖前面的
+    -->
+  <script src="jquery-3.6.0.min.js">
+  </script>
+
+<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3681880960,455182084&fm=26&gp=0.jpg" alt="">
+<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3824886304,665215047&fm=26&gp=0.jpg" alt="">
+
+<script>
+  window.onload = function () {
+    console.log('load1事件出发了');
+
+  };
+  window.onload = function () {
+    console.log('load2事件出发了');
+
+  };
+  window.onload = function () {
+    console.log('load3事件出发了');
+
+  };
+
+  $(document).ready(function () {
+    console.log('ready1事件出发了');
+  });
+  $(document).ready(function () {
+    console.log('ready2事件出发了');
+  });
+  $(document).ready(function () {
+    console.log('ready3事件出发了');
+  });
+
+</script>
+</body>
+</html>

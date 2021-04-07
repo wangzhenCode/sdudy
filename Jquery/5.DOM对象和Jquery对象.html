@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <div id="box">hello</div>
+  <script>
+    /*
+    * DOM对象：指使用原生的JS获取页面元素的方式得到的对象
+    * jquery对象：指使用jquery直接获取的页面元素得到的对象
+    *
+    * DOM对象与jquery对象的相互转换
+    * DOM对象转换为Jquery：$(DOM对象)
+    * jquery转换为DOM：jquery对象[下标]
+    * */
+  </script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+    var div = document.querySelector("#box");
+    console.log(div);
+
+    var $div = $("#box");
+    console.log($div);
+
+    console.log(div.innerHTML);
+    console.log($div.text());
+
+
+    console.log($div[0]);//jquery对象转换为dom对象
+    console.log($(div));//DOM对象转换为Jquery
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+ <!--jquery的写法-->
+<script src="jquery-3.6.0.min.js"></script>
+
+  <div>hello</div>
+<script>
+  // var div = document.querySelector("div");
+  // console.log(div.innerHTML);
+
+  /*
+  * 使用jquery
+  * */
+  //console.log($('div').text());//非常简便
+
+  /*
+  * 由于html文件的标签的加载问题，如果将jquery代码放到html代码前面，则代码不报错，但不会执行，介于这种情况，所以要写入口函数
+  * */
+  /*****************jquery的入口函数写法一*******************/
+  $(function () {
+    console.log($('div').text());
+  });
+  
+  /*****************jquery的入口函数写法二*******************/
+  $(document).ready(function () {
+    console.log($('div').text());
+  });
+
+</script>
+</body>
+</html>
